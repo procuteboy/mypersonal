@@ -1,0 +1,9 @@
+*** Morning
+**** 
+*****  How to improve section 3 in my paper.
+There is no need to refer the detail of the one-loop propagator. Sometimes it may give readers confusion.
+So I decide to delete some sentences about this and add some detail about the charge of quarks.
+     :LOGBOOK:
+     CLOCK: [2018-10-03 周三 08:54]--[2018-10-03 周三 09:17] =>  0:23
+     :END:
+
