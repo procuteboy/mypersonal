@@ -1,0 +1,716 @@
+\documentclass[prd, showpacs,nofootinbib,amsmath,amssymb]{revtex4}
+%\documentclass[aps,prd,showpacs,nofootinbib,preprintnumbers,twocolumn]{revtex4-1}
+\usepackage{amsfonts, amssymb, amsmath, graphicx, comment, bm, slashed}
+\usepackage[colorlinks]{hyperref}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage[caption=false]{subfig}
+\usepackage{multirow}
+\usepackage{mathrsfs,cleveref}
+\crefformat{equation}{Eq.~(#2#1#3)}
+\crefformat{section}{Sec.~#2#1#3}
+\begin{document}
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\section{Abstract}
+The effects of strong magnetic field on coexistence of diquark and chiral condensates at intermediate density critical phenomena are investigated by using Nambu-Jona-Lasinio model with the axial anomaly.
+%Due to the presence of a rotated magnetic field, the diquark condensates and the corresponding color-superconductor gaps become split on the side of CFL phase, while the chiral condensate is enhanced in the side of chiral broken phase.
+Comparing with previous zero-field studies,
+coexistence between BEC of color-superconductor matter and chiral broken phase changes signaturely.
+%our result of moderate density quark matter is very different in phase structure.
+%In the rotated-charge irrelevant($\tilde{Q}$-irrelevant) channel, the Bose-Einstein condensate is removed from the phase diagram.
+%Correspondingly,
+Due to the splitting of diquark gaps,
+the critical end point no longer appears as long as the magnetic field is strong enough(eB$\gtrsim ...$).
+%In the rotated-charge relevant($\tilde{Q}$-relevant) channel, on the other hand,
+We derive the formalism for critical potentials for BEC occurence.
+It is found that,
+for the diquark condensate where the quark with non-zero rotated-charge,
+% the critical end point is facilitated by strong magnetic fields.
+%Our studies suggest that
+an obvious inverse magnetic catalysis occurs at intermediate magtitude magnetic field.
+Its competition with an ordinary magnetic catalysis for chiral condensate  can explain
+critical phenomena happened with the magnetic field included.
+% might be responsible for the profound phase structure.
+
+\section{Introduction}
+The phases of strongly interacting matter described by quantum chromodynamics (QCD) have attracted great interests for years.
+The low-energy ground state of QCD is the hadron phase with condensation of quark-antiquark pairs, namely the chiral condensate $\langle\bar{q}q\rangle$, and it undergoes transition to the quark-gluon plasma phase at high temperature.
+At low temperature and high baryon number density, the Bardeen-Cooper-Schrieffer (BCS) pairing mechanism among quarks has been proposed and the diquark condensate $\langle qq\rangle$ leads to various color-superconducting phases, see e.g. Refs.~\cite{alford2004dense,buballa2005njl} for reviews.
+For three-flavor quark matter in the chiral limit, the color-superconducting phase corresponds to the color-flavor-locked (CFL) phase, which suggests to be the ground state of QCD for very high densities~\cite{alford1998qcd}.
+On account of these phases, many versions of QCD phase diagram were given schematically and, in particular, several of QCD critical points were suggested theoretically in literatures.
+
+Both the high-temperature critical phenomena and the low-temperature critical phenomena have been attracted attention recently~\cite{}.
+The latter was firstly predicted by a Ginzburg-Landau (GL) analysis with the interplay between chiral and diquark condensates induced by the QCD axial anomaly~\cite{}.
+It was further investigated in a phenomenological Nambu-Jona-Lasinio (NJL) model, where the axial anomaly is taken into account by including the Kobayashi-Maskawa-'t Hooft six-quark effective interactions~\cite{}.
+%incorporating the interplay between the chiral and diquark condensates induced by
+Due to the chiral-diquark interplay,
+not merely the coexistence (COE) of diquark and chiral condensates but also low-temperature critical phenomena are found to be different from the previous studies.
+As detailed in Ref.\cite{}, the phenomenon takes place in the sense that a Bose-Einstein condensation (BEC) of diquark molecules emerges firstly and then a crossover between the BEC phase and the BCS-type CFL phase is realized.
+
+Critical phenomena in the low-temperature could not be addressed with the first-principle lattice QCD simulations.
+Its existence is difficult to be observed in experimental heavy ion programs directly.
+The NJL calculations of this critical point are highly model dependent.
+Also, whether the low-temperature critical phenomena exist or not was found to be sensitive to a specific chiral-diquark coupling crucially\cite{}. Even for the appropriate model parameters, the given COE region is rather narrow and the obtained critical point is located at the intermediate density\cite{}.
+More importantly, the locations of such critical phenomena and their existences are still unclear in reality environment.
+For instance, if bare quark mass is included, $CFL_{BEC}$ would exclude from the phase diagram and the $2SC_{BEC}$ emerge Ref.[buballa].
+Also, the effect of confinement was found to relate with Polyakov loop Ref.[p and b], which indicate the existence of $CFL_{BEC}$.
+In the Ref.[], the local charge-neutrality are not considered.
+Those problem need further discussion.
+
+On the other hand, there exist strong magnetic fields in the astrophysical ``Laboratories".
+Magnetic fields of the order of $B \sim 10^{14}$ - $10^{15}\text{G}$ can be observed on the surface of Magnetars.
+In the interior of compact stars, the strengths can reach $B \sim 10^{18}\text{G}$ and a theoretical upper limit may be up to $B \sim 10^{20}\text{G}$~\cite{dong2001,lai1991cold}.
+Some of recent works were devoted to magnetic effect on the CFL color-superconducting phase.
+In this case, the rotated electric charge $\widetilde{Q}$ defined in the color-flavor space and the rotated electromagnetic mechanism play the key roles since the unbroken symmetry is $U(1)_{\widetilde{Q}}$~\cite{alford1998qcd,alford2000magnetic}.
+Once an unscreened magnetic field $B$ are turned on, considerable changes are predicted in CFL.
+According to the rotated-charges of quark species, in particular, different magnetic responses lead to the splitting of diquark condensate, and the correspond CSC gaps ~\cite{ferrer2005magnetic,fukushima2008color,ferrer2006color,ferrer2007magnetic}.
+%In Ref.\cite{}, an inverse magnetic catalysis for the emergence of diquark BEC phase was found under certain circumstance of magnetic field and the influence on such a BEC-BCS crossover was investigated.
+%It is worth to note that the phenomenon around this BEC-BCS crossover is not the above-mentioned critical phenomenon that predicted in three flavor and color QCD system \cite{}.
+%For the latter, to the best of our knowledge, the magnetic effect have not yet been elucidated until now.
+Noted that the only place CSC might be observed is the interior region of compact stars, many studies pay attention to the magnetic effect on the CSC  phase.
+For example, the gap splitting are considered when the magnetic field is introduced to BCS phase of CSC.
+It is important and crucial to investigate the relationship between COE, BEC and critical phenomena.
+Since there exist both chiral-condensate and diquark-condensate in COE, the magnetic field influence in expected to be manifold and complicated.
+In NJL-model with axial anomaly in the presence of magnetic effect have not yet been included.
+Exploring this effects is the main purpose of present paper.
+%This topic would lay the foundation for the well-resourced phase diagram and possible applications for the physics of magnetars and it is one of the important problems in the context of strongly interacting matter under magnetic fields.
+
+The paper is organized as follow. In section 2, we study COE phase and critical phenomena in the presence of $B\neq0$, and expand NJL-model with axial anomaly.
+%incorporate an applied field $B$ into the NJL model with axial anomaly to study how the chiral-diquark interplay and low-temperature critical point be modified by the presence of magnetic fields.
+%Due to the rotated electromagnetic mechanism, there exist the splitting of diquark condensate, namely,
+%rotated-charged($\widetilde{Q}$)  and rotated-neutral diquark gaps or channels.
+%As magnetic field is introduced, the critical phenomenon changes comparing with zero field resulting.
+The diquark condensates are found to split into the rotated-charged relevant one $s_B$ and the irrelevant one $s$, which shares one similarity with the gap splitting in the ``pure" CFL phase without chiral condensate~\cite{ferrer2005magnetic,fukushima2008color,ferrer2006color,ferrer2007magnetic}.
+As the consequence, the mean-field thermodynamic potential behaves as the function of three condensates $s_B$, $s$ and $\chi$ at the given temperature and quark chemical potential.
+By employing the extended formalism, our attention is first paid to the ${\widetilde{Q}}$-relevant channel of diquark condensate. We find that its associated BEC critical point are facilitated significantly by the presence of magnetic fields.
+%Then we study how the axial-anomaly induced interplay between chiral and diquark condensates be modified under magnetic fields.
+%We find that the interplay itself is facilitated also, which supports the existence of low-temperature critical point totally.
+%Our results suggest that this results are caused by the competition of inverse IMC in diquark condensate and MC effect in chiral condensate.
+In section 3, we derive the critical condensates for emergence of diquark and BEC phase.
+Numerical calculation for critical chemical potential and analysial discussion are given, and compared with the zero field result.
+In section 4, the influence of strong magnetic to our phase diagram is studied.
+
+
+
+\section{Formalism}
+\subsection{NJL-model with axial anomaly in zero magnetic field}
+In order to  include the magnetic effect  in the COE phase,
+we first review the NJL Lagrangian formalism with the axial anomaly in $B =0$.
+The NJL-type Lagrangian with the axial anomaly, firstly proposed in Ref.~\cite{abuki2010nambu}, reads
+\begin{equation}
+ \mathcal{L} = \bar{q} (i\gamma^\mu \partial_\mu - \hat{m} + \gamma_0\mu ) q +
+\mathcal{L}^{\left(4\right)}_{\chi} + \mathcal{L}^{\left(4\right)}_{d} + \mathcal{L}^{\left(6\right)}.
+\label{eq:lag}
+\end{equation}
+It describes the dynamics of quark field $q$ with three color $(r, g, b)$ and three flavor $(u, d, s)$ degrees of freedom. The current quark masses enter
+through the diagonal mass matrix $\hat{m} = \text{diag}_f(m_u,m_d,m_s)$ and the $\mu$ is the quark chemical potential.
+$\mathcal{L}^{\left(4\right)}_{d}$  yields the attraction of $qq$ pairs and the interaction coefficient is noted as $H$.
+Here $G$ and $H$ are dimensionful coupling constants.
+The six-point interaction in the NJL model consists of two parts, $\mathcal{L}^{\left(6\right)}_{\chi}$ and $\mathcal{L}^{\left(6\right)}_{\chi d}$.
+$\mathcal{L}^{\left(6\right)}_{\chi}$ is six-point interaction in the quark-antiquark channel, which is induced by the instanton effects.
+The interaction coefficient we note as $K$.
+This term is the standard Kobayashi-Maskawa-'t Hooft (KMT) interaction which couples the chiral condensate only.
+For the six-point term $\mathcal{L}^{\left(6\right)}_{\chi d}$, it is the effective interaction between chiral and diquark fields,
+the interaction coefficient write as $K'$.
+Through the whole passage, the chiral condensates and diquark condensates are defined as
+\begin{equation}
+\chi_i= \langle\bar{q}^\alpha_i q^\alpha_i\rangle,\quad
+s_{AA'}= \langle q^TC\gamma_5\tau_A\lambda_{A'} q\rangle,
+\end{equation}
+respectively, where the$(i,j,k)=(u,d,s)$ and $(\alpha,\beta,\gamma)=(r,b,g)$.
+In the chiral limit, $\chi_i$ is treated as unique value.
+$C = i\gamma^2\gamma^0$ is the charge conjugation matrix, and $\tau_i (i = 1, \cdots, 8)$ are the Gell-Mann matrices in flavor space.
+The flavor and color structure of the quark-quark interaction is generated by the antisymmetric matrices ($i =2, 5, 7$).
+And generally, we suppose $m_u=m_d=m_s=0$, three of the diquark condensates are defined in unite value $s=s_{22}=s_{55}=s_{77}$.
+In the mean-field approximation, $\mathcal{L}^{\left(4\right)}_{\chi}$  is a four-point interaction in the quark-antiquark channel,
+the interaction coefficient is noted as $G$,
+which produces attraction of $\bar{q}q$ pairs and leads to the chiral symmetry breaking with formation of the chiral condensates.
+%$\mathcal{L}^{\left(4\right)}_{d}$ is a four-point interaction in the quark-quark condensates,
+%\begin{equation}
+%\mathcal{L}^{\left(4\right)}_{d} = H[s^*(q^TC_i\gamma_5 \tau_A \lambda_A q)+h.c.]-3H|s|^2.
+%\label{eq:d4}
+%\end{equation}
+
+%\begin{equation}
+%\mathcal{L}^{\left(6\right)}_{\chi d} =
+%-\frac{K'}{4}|s|^2\bar{q}q-\frac{K'}{4}\chi[s^*(q^TC\gamma^5\tau_A\lambda_Aq)+h.c.]+\frac{3K'}{2}|s|^2\chi,
+%\label{l6chid}
+%\end{equation}
+%where in the last factor the indices $i$ and $j$ refer to the flavor components.
+
+In the mean-field approximation, via the standard treatment (include Nambu-Gor'kov formalism), the thermodynamic potential of the NJL-model reads,
+\begin{equation}
+\label{eq:omega}
+\Omega_{B=0} = -\frac{1}{\beta}\sum_{k=0}^{\infty}\int \frac{d^4p}{(2\pi)^4}
+\frac{1}{2}\text{Tr ln}[\beta S^{-1}(i\omega_k,\vec{p})]
++ U(\chi,s),
+\end{equation}
+where $S^{-1}(i\omega_k,\vec{p})$ is the inverse propagator in the momentum space and $\omega_k = (2k+1)\pi/\beta$, $k =0, \pm 1, \pm 2$, $\cdots$, are the Matsubara frequencies.
+And there are two gap parameter involved in the inverse propagator,
+the constituent quark mass in quark-antiquark channel
+\begin{equation}
+M = -4(G-\frac{1}{8}K\chi)\chi + \frac{1}{4}K's^2,
+\end{equation}
+and in the quark-quark channel Majorana mass
+\begin{equation}
+\Delta = -2(H - \frac{1}{4}K'\chi)s.
+\end{equation}
+Field potential term $U$ reads
+\begin{equation}
+\label{eq:u}
+U = 6G\chi^2 - 4K\chi^3 + 3(H-\frac{K'}{2}\chi)s^2.
+\end{equation}
+At the zero temperature, evaluating the trace and summing over the fermionic Matsubara frequencies $p^0=i\omega_n=(2n+1)\pi iT$, the thermodynamic potential is given by
+\begin{equation}
+\Omega_{B=0}=-\int\frac{d^3p}{(2\pi)^3}\sum_{\pm}(8\epsilon^{\pm}_8+\epsilon^{\pm}_1)+U(\chi,s),
+\end{equation}
+where the dispersion relation of octet and singlet representations reads
+\begin{equation}
+\epsilon^{\pm}_8=\sqrt{(\sqrt{p^2+M^2}\pm\mu)^2+\Delta^2_8},\quad
+\epsilon^{\pm}_1=\sqrt{(\sqrt{p^2+M^2}\pm\mu)^2+\Delta^2_1},
+\end{equation}
+with $\Delta_1=2\Delta$, and $\Delta_8=\Delta$.
+
+\subsection{The extended model with nonzero magnetic field}
+In this section we expand the NJL-model with axial anomaly in the presence of magnetic field.
+The formalism of ordinary NJL-model (without axial anomaly) in $B\neq0$ had been derived in the Ref.[...].
+There, the most important physic is rotated electromagnetic mechanism.
+%For clearly mention the question, let's review the formalism of an ordinary NJL-model without the axial anomaly in $B\neq0$.
+%As known, the electromagnetic rotation mechanism mixing the photon and gluon field.Ref[].
+It breaks the original $U(1)_{Q}$ symmetry and generates an unbroken $U(1)_{\widetilde{Q}}$ gauge symmetry.
+%The $\widetilde{Q}$ charges of the different quark are present in the table$I$.
+%\begin{table}[ht]
+%\centering
+%\begin{tabular}{c c c c c c c c c}
+%\hline  $s_b$  &  $s_g$  & $s_r$ & $d_b$ & $d_g$  & $d_r$ & $u_b$ & $u_g$ & $u_r$ \\
+%\hline  0  &  0    & -   & 0   &  0   & -   & +   &   +  & 0 \\
+%\hline
+%\end{tabular}
+%\end{table}
+Due to the different rotated charges, the diqurak condensates $s$ in CFL phase becomes splitted into the two different values.
+The $\widetilde{Q}-$irrelevant $s=s_{22}$ and the $\widetilde{Q}-$relevant $s=s_{55}=s_{77}$, while the chiral condensates are still unique value.
+Correspondingly, the gaps reads
+\begin{equation}
+M=-4G\chi,\quad
+\Delta\sim s,\quad
+\Delta_B\sim s_B.
+\end{equation}
+%Since the magnetic field cause different type of the quark pair, the diquark condensate would be defined in separate channel. The diquark condensate mainly consist of $\widetilde{Q}-$relevant and $\widetilde{Q}-$irrelevant channel, which named as $s$ and $s_B$ in this paper.
+%Obviously, $\Delta\sim s=s_{22}$, $\Delta_B\sim s_B=s_{55}=s_{77}$.
+Then the thermodynamic potential of one loop contribution at $T=0$ is given by
+\begin{equation}
+\Omega_{B\neq0}=-3\int\frac{d^3p}{(2\pi)^3}|\epsilon^n|
+       -\int\frac{d^3p}{(2\pi)^3}\sum^2_{j=1}|\epsilon^m_j|
+       -4\frac{eB}{8\pi^2}\sum^\infty_{n=0}\alpha_n\int dp|\epsilon^c|+U(\chi,s),
+\end{equation}
+where the dispersion relation of $\widetilde{Q}$-neutral, $\widetilde{Q}$-charge relevant and their mixed channel are given as follow respectively
+\begin{equation}
+\epsilon^{n}=\sqrt{(\sqrt{p^2_3+p^2_{\perp}}\pm\mu)^2+\Delta^2},\quad
+\epsilon^c=\sqrt{(\sqrt{p^2_3+2neB}\pm\mu)^2+\Delta^2_B},\quad
+\epsilon^{m}_j=\sqrt{(\sqrt{p^2_3+p^2_{\perp}}\pm\mu)^2+\Delta^2_j},
+\end{equation}
+with $\Delta_{1\slash2}=\frac{1}{2}(\sqrt{\Delta^2+\Delta^2_B}\pm\Delta)$. The potential term is given by
+\begin{equation}
+U=6G\chi^2+2Hs^2_B+Hs^2
+\end{equation}
+
+Now consider the NJL-model with axial anomaly in nonzero magnetic field.
+For the simplification of calculating the free energy, we assumed the constituent mass as an unit value, receiving the mean of the contribution from both the $\widetilde{Q}$-irrelevant diquark gaps and $\widetilde{Q}$-relevant diquark gaps.
+The dispersion relation in the one-loop contribution term of Eq.(11) are expanded as
+\begin{equation}
+\label{eq:dispersion1}
+	\epsilon^n = \sqrt{(\sqrt{p^2+M^2}\pm \mu)^2 + \Delta^2},\\
+\end{equation}
+and
+\begin{equation}
+\label{eq:dispersion2}
+\epsilon^m_1 = \sqrt{(\sqrt{p^2+M^2}\pm \mu)^2 + \Delta_{a}^2},\quad
+\epsilon^m_2 = \sqrt{(\sqrt{p^2+M^2}\pm \mu)^2 + \Delta_{b}^2},
+\end{equation}
+where $\Delta_{a/b} = 1/2( \sqrt{\Delta^2 + 8\Delta_B^2} \pm \Delta)$.
+The dispersion relations for charged quarks are
+\begin{equation}
+\label{eq:dispersion3}
+\epsilon^c = \sqrt{(\sqrt{p^2+M^2 + 2n eB} \pm \mu)^2 + \Delta_B^2}.
+\end{equation}
+Also, it is noted that dispersion relation of $\widetilde{Q}$-relevant term need consider the summation over the Landau levels,
+the integral of $\widetilde{Q}$-relevant channel need a substitution:
+\begin{equation}
+2\int\frac{d^3p}{(2\pi)^3}\rightarrow\frac{eB}{8\pi^2}\sum^{\infty}_n(2-\delta_{n0})\int dp
+\end{equation}
+Due to the split of diquark condensates, compared to the Eq. (6) in the case of $B=0$, the quark mass need to be expanded as
+\begin{equation}
+M=-4(G-\frac{1}{8}K\chi)\chi+\frac{1}{12}K's^2+\frac{1}{6}K's^2_B,
+\end{equation}
+Eq.(7) are expanded as
+\begin{equation}
+\Delta=-2(H-\frac{1}{4}K'\chi)s,
+\end{equation}
+\begin{equation}
+\Delta_B=-2(H-\frac{1}{4}K'\chi)s_b.
+\end{equation}
+On the other hand, for same reason, the potential term Eq.(8) also need to be modified in this situation,
+\begin{equation}
+U=6G\chi^2-4K\chi^3+(H-\frac{K'}{2}\chi)(s^2+2s^2_B).
+\end{equation}
+In summary, the zero-temperature thermodynamic potential came from Eqs.(11)and(20) given as
+\begin{equation}
+\label{eq:bfreegy}
+\Omega = -6\int h_{\Lambda} \frac{p^2}{4\pi^2} dp
+|\epsilon^n|
+-2\int h_{\Lambda} \frac{p^2}{4\pi^2} dp
+\sum_{j=1}^2 |\epsilon_j^m|
+-8\frac{eB}{4\pi^2}\sum_{n=0}^{n_{max}} (1 -\frac{\delta_{n0}}{2}) \int h^n_{\Lambda,B}dp|\epsilon^c|
++ U.
+\end{equation}
+In the case B$\neq$0, hard cutoff are not suitable to apple in the integral Ref.[...],
+thus smooth form factors $h_\Lambda$ are added in the integration to eliminate the divergence.
+
+The gap equations to determine the chiral condensate $\chi$, diquark condensate $s$
+and $s_B$ can be achieved by minimizing the thermodynamic potential
+\begin{equation}
+	\label{eq:gap}
+	\frac{\partial \Omega}{\partial \chi} =0,\quad
+	\frac{\partial \Omega}{\partial s} =0,\quad
+	\frac{\partial \Omega}{\partial s_B} =0.
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Numerical results in given NJL parameter}
+\label{2}
+\subsection{Regularization scheme and parameters}
+In the following, we will investigate numerically the magnetic effect on the COE phase.
+Since the  thermodynamic potential involve integrals that diverge in the ultra-violet region, we must regularize in order to obtain  physically meaningful free energy
+density of the system.
+We have  choosed to regulate these functions  by using  smooth regulator, which is already used in the NJL model with the presence of magnetic field.
+In order to non-physic oscillation, here we choose a kind of smooth regulator scheme, called as ``Lorenzian type" regulator scheme, i.e.,
+\begin{equation}\label{eq:regulator}
+  h_{\Lambda} = [1+(\frac{p}{\Lambda})^5]^{-1},   h^n_{\Lambda,B}=[1+(\frac{\sqrt{p_3^2 + 2neB}}{\Lambda})^5]^{-1}.
+\end{equation}
+This point can be viewed from the behavior of effective mass as functions of magnetic field.
+In Fig., it is clearly shown that the effective mass function obtained by  ``Lorenzian type" regulator scheme
+has lesser oscillation behavior than that used by normal type regulator scheme.
+%For the $\widetilde{Q}$-irrelevant quark channel, the momentum integral term is changed to
+%\begin{equation}
+%\int_{0}^{\infty} \cdots dp  \rightarrow  \int_{0}^{\infty} [1+(\frac{p}{\Lambda})^5]^{-1} \cdots dp,
+%\end{equation}
+%where $\Lambda$ is cutoff scale momentum.
+%As for the $\widetilde{Q}$-relevant quark channel, it is changed to the form as follow
+%\begin{equation}
+%\sum_{n=0}^{n_{max}}(1 -\frac{\delta_{n0}}{2})\int_{0}^{\infty} \cdots dp  \rightarrow \sum_{n=0}^{n_{max}}(1 -\frac{\delta_{n0}}{2}) \int_{0}^{\infty} [1+(\frac{\sqrt{p_3^2 + 2neB}}{\Lambda})^5]^{-1} \cdots dp.
+%\end{equation}
+Note that one may employ a sharp cutoff with the step function for example, but it may lead to nonphysical discontinuities in the free energy \cite{noronha2007color}.
+The number of completely occupied Landau levels $n_{max}$, restricted by the momentum cut-off,
+can be determined as follows
+\begin{equation}\label{eq:nmax}
+  n_{max}= \text{Int}[\frac{\Lambda^2}{2eB}]
+\end{equation}
+
+
+In order to perform the momentum integrations numerically, we have to fix the free parameters
+of the model, the momentum cutoff $\Lambda$, four-fermion coupling constants $(G,H)$ and the two
+six-fermion coupling constants $(K, K')$.
+The momentum cutoff $\Lambda$ and the chiral coupling constant G is fixed by fitting the pion prosperities in vacuum, e.g., the pion mass $m_\pi = 134 MeV$ and the constituent quark $M = 340 MeV$.
+Similarly, the diquark coupling constant $H$ is fixed by fitting the scalar diquark mass.
+And the six-fermion coupling constants $(K, K')$ is maintained to make the second-order transition appear.
+Here we  follow the parameters setting in Ref.~\cite{abuki2010nambu}:
+%\begin{align}
+%\label{eq:parameter}
+$\Lambda = 602.3 MeV,
+G  = 1.926/\Lambda^2,
+H  = 1.74/\Lambda^2,
+K  = 12.36/\Lambda^5,
+K' = 4.2K$.
+%\end{align}
+In this case, we can reproduce  the results of the zero value field case as described in Ref.
+
+
+
+
+%Now we begin to investigate possible changes in the presence of
+%nonzero value  field.
+
+
+In order to show such results  clearly,  we plot the corresponding figure of effective mass and diquark gaps as functions of chemical potential at two different values of magnetic field.
+One is the field value lesser than $eB_{th}$, another is larger than $eB_{th}$.
+In Fig.~\ref{fig:phase},
+we plot the $\Delta$, $\Delta_B$ and  $M$ as functions of
+chemical potential $\mu$  at $eB = 4.6 m_\pi^2$, which is lesser than $eB_{th}$.
+The continuity behavior of the order parameter  $\Delta$, $\Delta_B$ and  $M$  implicits that the intermediate regime, connecting the $\chi$SB phase and the BCS phase, is still a second-order transition.
+%Different from the case of $B =0$, the diquark gap $\Delta$ and  $\Delta_B$ emerge
+%at  different points. Exactly, first is  for $\Delta_B$ in the diagram then for the diquark gap $\Delta$.
+%Based on the emergent point behaviors of the diquark gaps  $\Delta$ and  $\Delta_B$, we argue that there are two new physically distinct regions.
+Associated with  the diquark gaps  $\Delta$ and  $\Delta_B$, we  refer the diquark BEC phase with single $\Delta_B$, the unusual BEC phase, as
+ $\text{BEC}_\text{I}$ phase.
+
+In Fig.,  we plot these order parameters the $\Delta$, $\Delta_B$ and  $M$ as functions of
+chemical potential at $ eB = 9.2 m_\pi^2$, larger than $eB_{th}$. The continuity behaviors for order parameters indicates that
+the second-order transition for diquark condensate $s_B$ has been changed.
+However, different from the case of $eB < eB_{th}$,  the jump behavior of effective mass and diquark gap $\Delta$  indicates the ordinary BEC phase has disappeared.
+
+\section{diquark BEC occurence: its critical chemical potential}
+\subsection{formalism for diquark BEC occurence}
+In zero field case, the introduction of the axial anomaly not only triggers the BEC phase but also a BEC-BCS crossover in the COE phase.
+In fact, for such the critical phenomena, the BEC phases with additional chiral condensate (rather than the BCS phases) plays the key role in the COE phase. In the present work, we will discuss the evolvement of BEC phases of diquark condensate   and explain such phenomena happened in the presence of magnetic field.
+
+Before the discussion of the occurence of BEC phase, Let us first investigate the BEC-BCS crossover in the presence of nonzero field.
+The distinction between the BEC and BCS phases is  determined by the  quasi-particle dispersion relations.
+%For  diquark gap $\Delta$,
+%its dispersion equation is defined in Eq.~\eqref{eq:dispersion1}.
+For $\mu < M$, the minimum of the dispersion locates at $p=0$, a structure characteristic of  the BCS phase.
+For $\mu > M$, the minimum
+of the dispersion is shifted to $p = \sqrt{\mu^2-M^2}$ and quasi-particle gap is given by $\Delta$. This corresponds to the fermionic spectrum in the BCS state.
+%For diquark gap $\Delta_B$,  there exist the Landau Level term $2neB$ ,
+%but it is originated from momentum part.for all diquark gaps
+Therefore the BEC-BCS crossover  is characterized by the condition $\mu =M$, being equivalent with zero field case.
+
+Once the magnetic field is introduced, it is expected that the splitting of diquark-condensates makes the BEC phase structure more complicated.
+In principle, there exist different BEC phases, for instance the BEC phase with either the diquark gaps $\Delta$ or $\Delta_B$ being nonzero.
+Before going to the detailed calculation, let us firstly derive the criterion condition for the
+occurence of possible BEC phases.
+
+
+In order to achieve the criterion condition for BEC phase, one may consider the  fluctuations around diquark gaps determined by
+the mean-field approximation.
+%Here  we have treated the diquark condensate $s_A$ as the  system order parameter,
+%the emergence of BEC  can be viewed as  a second-order phase transition for the order parameter $s_A$.
+In general sense,
+%the order-parameter $s_A$ have fluctuations around the values determined by
+%the mean-field approximation.
+ the thermodynamic potential can be expanded up the second order in the term of order parameter $\Delta_A$ around the critical point\cite{abuki05}
+\begin{equation}\label{eq:omegasecond}
+  \alpha_2 \sim \frac{1}{H'}- Q_A(\vec{q} = \vec{0},\omega ).
+\end{equation}
+
+Since the occurence of BEC  can be treated as  a second-order phase transition for the corresponding diquark gaps,
+the second-order coefficient being zero determines the critical chemical potential for the BEC phase, i.e.,
+\begin{equation}
+\label{eq:bdiquark}
+	\alpha_2 \sim \frac{1}{H'} - Q_A(\vec{q} = \vec{0},\omega =0) =0.
+\end{equation}
+This is nothing but the Thouless criterion which is well known in condensed matter physics.
+The one-loop quark-quark polarization function  $Q_A$ in Eq.~\eqref{eq:omegasecond} can be archived by
+\begin{equation}
+\label{eq:qqpol}
+Q_A(\vec{q})
+= 2i\int \frac{d^4\vec{p}}{(2\pi)^4}
+\times \text{Tr}[i\gamma_5G_0(\vec{q}-\vec{p})i\gamma_5 C G_0(\vec{p})],
+\end{equation}
+with the  quark fermion propagator $G_0(\vec{p}, 0) = [\slashed{p}+\mu\gamma_0 - M]^{-1} $.
+%In the regime $M >\mu$,
+
+In zero field case, the gaps for diquark condensate has not splitted  and the
+order parameter of system is an unique one $\Delta$. The author of Ref.\cite{abuki2010nambu} has obtained the critical chemical potential for BEC through the similar method
+\begin{equation}\label{eq:criticalfor0}
+  \frac{1}{H'} =\frac{4}{\pi^2}\int [\frac{  p^2}{E + \mu} +\frac{  p^2}{E - \mu}] dp =\frac{8}{ \pi^2} \int  \frac{ E p^2}{E^2 - \mu^2} dp,
+\end{equation}
+here we have simplified it for our latter discussion convenience.
+
+
+
+
+For our case,  we need investigate the critical chemical potential for $\text{BEC}_\text{I}$ and BEC of CFL  phases respectively, owing to the diquark gap is  splitted.
+For BEC of CFL  phase,
+the order parameter is  diquark gap $\Delta$ and its corresponding quark pairing is $ds$ and the rotated-charge for all the composed quarks
+is neutral.
+Therefore the form of the one-loop quark-quark polarization function has not been changed,
+it is natural to derive such the BEC phase criterion equation, which is formally equivalent with that obtained in the case of $B = 0$,
+%residues  only the second term of R.H.S in the \cref{eq:criticalforq}, i.e.,
+\begin{equation}
+\label{eq:criticalforn}
+\frac{1}{H'} =\frac{8}{ \pi^2} \int h_\Lambda  \frac{ E p^2}{E^2 - \mu^2} dp.
+\end{equation}
+Here we have introduced the smooth regulator scheme factor to remove possible unphysical oscillator.
+%Note that here the effective mass in the quark energy  is not only magnetic field, but also chemical potential dependent parameter.
+
+
+
+
+For  $\text{BEC}_\text{I}$ phase, its order parameter is diquark gap $\Delta_B$ and its quark pairings are
+$ud$ and $us$.
+Different from the case of diquark gap $\Delta$, these quark pairings are composed of not only rotated-charged  quarks, but also neutral quarks.
+Half number of these are rotated-charged  and others are neutral.
+This point can be certificated in Table..
+During the calculation of  one-loop quark-quark function, it is important to
+note  that the  quark fermion propagator for rotated charged quark has changed to
+$G_0(\vec{p},0) = [\slashed{p}_{\pm}+\mu\gamma_0 - M]^{-1}$, with $p_{(\pm )} = (p_0,0,\pm\sqrt{2eBn},p_3)$.
+%
+ Therefore the momentum integral for the rotated-charge quark part is needed to consider the same substitutions, see in Eq.
+Then the  criterion condition for $\text{BEC}_\text{I}$ phase can be derived as
+%= \frac{2}{\pi^2}\sum_{\pm}\int_B \frac{ 1}{E_B \pm \mu} dp + \frac{2}{\pi^2}\sum_{\pm}\int \frac{  p^2}{E \pm \mu} dp
+\begin{equation}
+\label{eq:criticalforq}
+\frac{1}{H'}  =
+ \frac{eB}{2\pi^2} \int \sum_{n=0}^{n_{max}} (1 -\frac{\delta_{n0}}{2}) h_{\Lambda B}^n
+\frac{E_B}{E_B^2 -\mu^2 } dp + \frac{4}{ \pi^2} \int  h_{\Lambda}
+\frac{Ep^2 }{E^2 - \mu^2} dp
+\end{equation}
+The  first term of R.H.S in  \cref{eq:criticalforq} is
+originated the contribution from the rotated-charged quarks and thus reflects the direct interaction between magnetic field and charged quarks. And the second term
+is originated contributions from neutral quarks and reflects the indirect interaction through the effective mass.
+%Owing to half number of neutral quark in original quark paring are replaced by the rotated charged quark, coefficient $\frac{8}{\pi^2}$ is changed to $\frac{4}{\pi^2}$ in the second term.
+In the zero field limit, it is  shown that the form of \cref{eq:criticalforq}  recovers to Eq.~\eqref{eq:criticalforn}, by using the well-known Euler-McLaurin summation formula.
+\subsection{Numerical results}
+At the beginning, we achieve the critical chemical potential for $\text{BEC}_\text{I}$ and $\text{BEC}_\text{II}$ (the phase with $s\neq 0$, $s_B=0$ and $\chi  \neq 0$), or say $\mu_c^\text{I}$ and $\mu_c^\text{II}$,  respectively.
+The value of the effective mass in \cref{eq:criticalforn,eq:criticalforq} is archived at the low chemical potential, being only chiral condensate dependent.
+Meanwhile, we can get the value for the BEC-BCS crossover through the condition $\mu = M$.
+
+%Now we turn to investigate the magnetic field dependencies of the value of critical chemical potential.
+
+\begin{figure}[h]
+  \caption{Critical  chemical potential  as  functions of the magnetic field for  the diquark BEC phase transition and the BEC-BCS crossover}
+  \centering
+    \includegraphics[width=0.5\textwidth]{third.eps}
+    \label{fig:thirdpoint}
+\end{figure}
+
+In Fig.\ref{fig:thirdpoint}, we plot the critical  chemical potential for  $\text{BEC}_\text{I}$  and $\text{BEC}_\text{II}$  phases  critical point and BEC-BCS crossover as  functions of the magnetic field.
+At weak field regime, the behavior of BEC-BCS crossover as function of magnetic field keeps unchanged.
+At the regime $ 6 m_\pi^2 <eB < 11 m_\pi^2$, the value of BEC-BCS crossover  decreases with magnetic field.
+And at  strong field regime, the value of BEC-BCS crossover is an almost increasing function.
+As for the value of $\mu_c^\text{II}$ , its behavior as function of magnetic field is basically similar to the case of  BEC-BCS crossover at strong magnetic field regime.
+It is clearly shown the value of $\mu_c^\text{II}$  is always larger than that of $\mu_c^\text{I}$.
+It is the reason why $\text{BEC}_\text{I}$ phase appear first in phase diagram.
+Owing to this fact above, $\text{BEC}_\text{II}$ phase would not appear  in phase diagram
+and the value of the effective mass for BEC phase of most symmetric CFL will be determined in the regime of $\text{BEC}_\text{I}$ phase, being chiral condensate and diquark condenstae $s_B$ dependent.
+Based on this point, we add the line of the critical  chemical potential for  BEC phase, or $\mu_c^\text{BEC}$, in Fig.\ref{fig:thirdpoint}.
+As depicted in Fig.\ref{fig:thirdpoint}, $\mu_c^\text{BEC}$ is also an  increasing function.
+
+
+It is interesting to show that the value of $\mu_c^\text{I}$ is a decreasing function, not an increasing function, at $ 6 m_\pi^2 <eB < 10 m_\pi^2$ regime.
+%The reason for the behavior of $\mu_c^\text{I}$ as  function of magnetic field will be explained in the next subsection.
+Since the critical point for $\mu_c^\text{I}$ can be treated as  the end point of chiral phase transition,
+it means that finite magnetic field makes the value of  chiral phase transition decrease.
+Different from the case  of magnetic catalysis for chiral phase transition at low chemical potential, such
+phenomena can be regarded as inverse magnetic catalysis (IMC).
+In fact, both the chiral condensate and diquark condensates are influenced by the magnetic field.
+%If ignoring the magnetic field dependence for the chiral condensate, Fig.\ref{fig:thirdpoint} shows that the value of $\mu_c^\text{I}$
+%decreases with magnetic field. It indicates that magnetic field helps  $\text{BEC}_\text{I}$ occur.
+%Essentially, the reason can be attributed to  the diquark condensate $s_B$ is enhanced by the magnetic field.
+
+Note that the  value of   BEC critical point should be lesser than the value of the BEC-BCS crossover. In Fig.\ref{fig:thirdpoint}, at the value of threshold magnetic field $eB_{th}$, the value of  $\mu_c^\text{BEC}$  begins to be larger than that of the BEC-BCS crossover.
+When $eB > eB_{th}$, the critical phase point $\mu_c^\text{BEC}$ no longer appears and  then $\text{BEC}_\text{II}$ disappears from phase diagram.
+This fact can be reviewed from the jump behavior of the order parameters: diquark condensates and chiral condensate.
+On the other hand, the value of $\text{BEC}_\text{I}$ phase transition point is always lesser than that of the BEC-BCS crossover.
+It means that, even though the low-temperature critical phenomena for the
+BEC of symmetric CFL no longer exist, the $\text{BEC}_\text{I}$
+regime and chiral phase transition still exist.
+Then the case of  $eB > eB_{th}$ and $eB > eB_{th}$  can correspond to  Fig. and Fig. mentioned in Sec. respectively.
+%The reason is the value of $\mu_c^\text{II}$ is larger than that of the effective mass $M$, being contradiction with the condition for BEC phase.
+
+Although we have choosed appropriate regulator scheme factor to remove nonphysical oscillator
+there exist sightly  oscillation behaviors for  $\mu_c^\text{BEC}$  and the BEC-BCS crossover.
+The reason can be attributed to the effective mass receive more contribution from
+the  diquark condensates, especially for diquark condensate $s_B$, known as van Alphen–de Haas (vA-dH)  oscillation behaviors. Even so, such oscillation behaviors do not influence the final results discussed above.
+%It explains the behavior as functions of chemical potential in the presence of magnetic field  in Fig..
+
+%For the critical chemical potential for  $\text{BEC}$, the form of effective mass is $-4(G-\frac{1}{8}K\chi)\chi+\frac{1}{6}K's^2_B$  ,being not  the chiral condensate relevant, but also the diquark condensate $s_B$ relevant.
+%For BEC-BCS crossover, the effective mass can be expressed as $-4(G-\frac{1}{8}K\chi)\chi+\frac{1}{12}K's^2+\frac{1}{6}K's^2_B$, being diquark condensates $s$ and $s_B$ dependent.
+%Both critical point and BEC-BCS crossover display  inevitable oscillation behaviors.
+
+
+\section{Effective diquark coupling and its dependence on magnetic field}
+%So far, the critical phenomena  is calculated for the same NJL parameter set in Ref.\cite{}.
+%In the following, we will not restrict the discussion in the case of given parameters.
+%Instead, we investigate magnetic field dependencies of the key parameters, specific for the critical phenomena and
+%then explore possible explanation for the resultant phase structure.
+
+
+%Firstly
+
+For the diquark  condensed phase, it is well known that  the diquark coupling $H$
+represents the magnitude of diquark attractive interaction  in the NJL-type formalism.
+When the axial anomaly is introduced, it is the effective coupling $H'$ to enhance the diquark attractive interaction and
+thus make the diquark BEC phase possible.
+
+Toward the essential of magnetic effect for diquark condensate, therefore, we need to investigate how the effective coupling $H'$ vary as  it is required for the occurrence of
+the phase transition for diquark BEC phase.
+
+
+Let us  reexamine the criterion equations for BEC phases.
+Owing to the oscillation behavior appeared in the finite magnetic field, our discussion will be restricted at strong field regime. In that case , there is no need any more to introduce smooth regulator scheme factor.
+For the occurrence condition for BEC  phase in the zero field ~\eqref{eq:criticalfor0} and the $\text{BEC}_\text{II}$ phase transition~\eqref{eq:criticalforn}, the effective coupling $H'_0$ and $H'_\text{II}$ can be obtained by replaying the integral simply.
+%\begin{equation}\label{eq:cond0}
+%\frac{1}{ H'_0}=  \frac{8}{\pi^2} \int^{\Lambda}_0 \frac{Ep^2 }{E^2 - \mu^2} dp.
+%\end{equation}
+%Similarly, for the $\text{BEC}_\text{II}$  phase transition,  the effective coupling $H'_\text{II}$ is
+%\begin{equation}\label{eq:cond1}
+%  \frac{1}{ H'_\text{II}}=   \frac{8}{\pi^2} \int^{\Lambda}_0 \frac{Ep^2 }{E^2 - \mu^2} dp.
+%\end{equation}
+More complicated  for $\text{BEC}_\text{I}$ phase transition,  since the magnitude of magnetic field is sufficiently large, the system dimension has been reduced to $1+1$ dimension. Then the summation in Eq. has reduced to only one term
+and the so-called lowest Landau Level (LLL) works.
+Therefore the effective coupling $H'_\text{I}$ is changed to
+\begin{equation}\label{eq:cond2}
+ \frac{1}{ H'_\text{I}}=\frac{4}{\pi^2} \int_0^\Lambda \frac{Ep^2 }{E^2 - \mu^2} dp+\frac{eB}{ 2\pi^2} \int_0^\Lambda
+\frac{ E}{E^2 - \mu^2} dp.
+\end{equation}
+
+
+
+Note that the effective diquark coupling is mainly determined by the value of the effective mass and chemical potential.
+In order to achieve the value of the effective coupling for corresponding BEC phases, it is practical to adopt the given parameter for chemical potential and then neglect the density dependence for BEC phases.
+The value of the effective mass is also needed given by hand.
+Here we assume that the critical chemical potential for the three BEC phases transitions are given  at  zero magnetic field case, or say $\mu=315$MeV.
+In this term, it implies that the  NJL model parameters might be varied.
+For our purpose, the value of the effective diquark coupling to these BEC phases transition.
+
+
+Since the complexity for our problem is that not only the chiral condensate in the effective mass is influenced by the magnetic field, but also for  diquark condensates.
+By removing the magnetic effect for chiral condensate,  the magnetic effect for diquark condensate can be clearly shown in the variation of effective coupling.
+For our purpose, firstly we ignore the magnetic dependence for the chiral condensate in order to simplify our problem.
+Then we include the magnetic field dependence in order to explain the realistic  condition.
+Here the value of chiral condensate is calculated at low chemical potential, being equivalent with the result
+obtained in Refs..
+
+\begin{figure}[h]
+  \caption{  The ratio of required effective coupling as  functions of the magnetic field for  the diquark BEC phase transition. (a) The ratio of effective couplings $H'_\text{I}/H'_\text{0}$ and (b) $H'_\text{II}/H'_\text{0}$ are required at the chemical potential ($\mu=315MeV$ at zero field case)   solid line is given at the zero field case $M=470MeV$ and  dashed line is for the value of  $M$ given at low chemical potential.}
+  \centering
+    \includegraphics[width=0.5\textwidth]{h.eps}
+    \label{fig:h}
+\end{figure}
+In Fig.\ref{fig:h},  we plot the ratio of effective couplings $H'_\text{I}/H'_\text{0}$ and $H'_\text{II}/H'_\text{0}$   as functions of  magnetic field respectively in different given parameters.
+As shown in Fig.\ref{fig:h}.a, the effective coupling $H'_\text{I}$ is a monotonic decreasing function in a given value of chiral condensate.
+The decreasing behavior of $H'_\text{I}$ means that a strong field tends to facilitate the occurence of $\text{BEC}_\text{I}$  phase.
+In other words,   $\text{BEC}_\text{I}$ phase still remain valid, even though not  large value of the axial anomaly coupling $K'$  in the presence of strong magnetic background.
+%As shown in Fig.\ref{fig:h}, the effective coupling $H'_\text{I}$ is still a monotonic decreasing function, if ignoring the magnetic influence for chiral condensate.
+On the other hand, if the magnetic field dependence of the effective mass is included, it is observed as smaller value of the effective coupling and  a basically constant value of coupling.
+It means that the strong field case always bring out $\text{BEC}_\text{I}$  phase and critical point in the given parameters.
+
+
+As for  the  required effective diquark  coupling $H'_\text{II}$, it can be seen from Eq. that the effective coupling $H'_\text{II}$  keeps  unchanged, if magnetic dependence for the chiral condensate is  ignored.
+As depicted in Fig.\ref{fig:h}, once   the magnetic-dependence for the chiral condensate is taken into account, there exist a monotonic increasing tendency for coupling $H'_\text{II}$.
+Such result is very different from the case of effective coupling $H'_\text{I}$.
+It implies that  BEC  phase will disappear unless the axial anomaly induced interplay is enough strong.
+%Or it means that, on the other hand, strong field the occurence.
+%\begin{figure}[h]
+%  \caption{  The ratio of required effective coupling $H'_\text{I}/H'_\text{0}$ as  functions of the magnetic field
+%  at strong field regime. It is required at the chemical potential ($\mu=315MeV$ at zero field case). Blue solid line is given at the zero field case $M=470MeV$ and orange dashed line is for the value of  $M$ given at low chemical potential.}
+%  \centering
+%    \includegraphics[width=0.5\textwidth]{high.eps}
+%    \label{fig:high}
+%\end{figure}
+
+
+
+
+\begin{figure}[h]
+  \caption{  The ratio of  coupling $K'/K_0$ as  functions of
+  chemical potential at different magnitude value of magnetic field.}
+  \centering
+    \includegraphics[width=0.5\textwidth]{muk.eps}
+    \label{fig:muk}
+\end{figure}
+
+%In fact, the discussion about the effective diquark coupling is under the varying of the coupling $K'$.
+At last,
+we plot the phase diagram in the $\mu$-$K'$ plane at different magnitude magnetic field in order to give a brief summary for our results.
+First we show the $\mu$-$K'$ phase diagram Fig.\ref{fig:muk} at a relatively not strong value of magnetic field. One can recognize that for all choices of $K'$ there is always a first-order phase transition at some value of chemical.
+And the value of chemical potential for the first-order phase transition increases with magnetic field.
+Such behavior can be treated as a magnetic catalysis.
+Same with the case of zero field, the line of BEC-BCS crossover meets the line of first-order transition line at $P$.
+It means that there exist BEC-BCS crossover and BEC phase under larger than the value of coupling $K'$ at point $P$.
+Compared with the case of zero field,  it was showed  the $\chi$SB phase and the CSC phase will be presented for smaller values of $K'$.
+Different with the zero field results obtained in Ref.,  the
+line of $\text{BEC}_\text{I}$ and BEC joint the line of first-order transition line at points $Q_1$ and $Q_2$ respectively.
+It was shown that  points $Q_2$ and  $P$ move down with magnetic field.
+Although it seems that the increasing behavior of chemical potential for first-order transition requires a larger value of coupling $K'$, the value of chemical potential for BEC-BCS crossover is an increasing function.
+Such behavior for BEC-BCS crossover  maintain that the point $P$ will not move up with magnetic field.
+On the other hand, the competition between  first-order transition and BEC-BCS crossover leads to this trend of change for point $P$ is not obvious.
+% This point can be also concluded by the fact that the effective required coupling increases with magnetic field at small value of magnetic field. The increasing value of coupling  $H'$ means that system requires larger value of coupling $K'$.
+
+In Fig.\ref{fig:muk}, the case of strong field was also depicted.
+It was shown that point $Q_2$ disappears from phase diagram.
+But  point $Q_1$ and $P$ located still at phase diagram .  It means that BEC phase has disappeared and there still exists a somewhat smaller value of coupling $K'$ to maintain the occurence for $\text{BEC}_\text{I}$ phase and BEC-BCS crossover.
+
+
+
+\section{Conclusion}
+By using a modified three-flavor NJL phenomenological model with
+axial anomaly in the present of an external magnetic field,
+we have investigated the phase structure of strongly interacting matter at $T=0$.
+The modified Lagrangian is developed from a NJL model
+incorporating the attraction between the chiral and diquark condensates caused by
+the axial anomaly
+described in Ref.\cite{abuki2010nambu}.
+The interplay between the chiral and diquark condensate will not only induce a
+second-order transition but also a BEC-BCS crossover in the COE phase.
+When the magnetic field is introduced,
+our numerical result show that the second-order transition and the BEC-BCS crossover will not  disappear
+for  any value magnetic field is included.
+
+With the magnetic field is introduced, on the other hand, the CFL phase is changed to a MCFL phase
+due to the original symmetry $SU(3)_{C+F}$ is broken to $SU(2)_{C+F}$.
+Meanwhile the diquark gaps are splitted into two species:
+$\widetilde{Q}$-relevant diquark gap $\Delta_B$ and  $\widetilde{Q}$-irrelevant diquark gap $\Delta$.
+For the emergence points for these
+diquark gaps, they occur at different chemical potential value.
+In particular, the diquark gap $\Delta$ appear first then for $\Delta$.
+As a result, a new phase called as ``I" phase,
+owing to the phase have one single diquark gap $\Delta_B$, occur in the phase diagram.
+We have investigated
+the critical  chemical potential for $\Delta_B$ and $\Delta$.
+At smaller fields regime, the value of the critical chemical potential for
+$\widetilde{Q}$-relevant diquark gap displays oscillation behavior rather than
+a increasing behavior occupied by the $\widetilde{Q}$-irrelevant diquark gap.
+At larger fields regime, the value of the critical chemical potential for
+$\Delta$ and $\Delta_B$
+increase with the magnetic field at larger  magnetic fields regime.
+As for the value of critical chemical potential for the BEC-BCS crossover, it increases with the magnetic field.
+
+Physically, MC effect  and IMC effect  are  belong to different effects.
+For the MC effect, it happens in the chiral condensate  around dirac sea.
+Different from MC effect, IMC effect happens in the diquark condensate around the
+Fermi surface at nonzero value of chemical potential.
+In fact, such the IMC effect has already been found in high-temperature QCD.
+Even for low-temperature case, it has been pointed out in the literature.
+Although there exist similar point  between the 2SC work and the present work,
+the elements important for the present work, namely axial anomaly and the critical phenomena in three flavor QCD
+are lacked in Ref.\cite{2sc}
+
+%We have also discussed the behavior of the minimal requirement for the coefficient $K'$ as a function of
+%magnetic field by calculating the relationship between the critical chemical potential for
+%the BEC-BCS crossover and the magnetic field. The result show that the minimal requirement for the coefficient
+%$K'$ decreases with the magnetic field.
+%It should be noted that most of these qualitative changes only occur at
+%relatively large values of $K'$ , which may turn out to be
+%unrealistic.
+
+
+
+%The present study may be seen as a minimal extension of the analysis of Ref.~\cite{abuki2010nambu}
+%to include the magnetic field effects.
+%However, there are many other aspects which have not yet been taken into
+%account, for example the realistic strange quark masses.
+%In Ref.~\cite{Basler2010Role}, it pointed out that the 2SC phase will
+%play an important role in the phase diagram.
+%When the magnetic field is introduced,
+%it would be interesting to see how this result is modified when strange quarks is included and
+%how the results depend on the magnetic field.
+%
+%Moreover, the NJL model in our analysis lacks confinement mechanism as QCD.
+%The deconfinement feature can be taken into account in
+%the NJL model by introducing an effective gluon potential in terms of the Polyakov
+%loop in the Lagrangian.
+%In Ref.~\cite{}, it show that the presence of Polyakov loop decreases the minimal requirement for the coefficient $K'$.
+%It would
+%be interesting to study this in more detail in the presence of the magnetic field.
+
+\bibliographystyle{apsrev4-1}
+\bibliography{graduate.bib}
+
+
+
+\end{document}

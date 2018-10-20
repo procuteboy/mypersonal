@@ -1,0 +1,1604 @@
+\documentclass[12pt]{article}
+%\documentclass[prd, showpacs,nofootinbib,amsmath,amssymb]{revtex4}
+\usepackage{amsfonts, amssymb, amsmath, graphicx, comment, bm, slashed}
+\usepackage[colorlinks]{hyperref}
+\usepackage{dcolumn}   %from Tomoki
+\usepackage{bm}        %from Tomoki
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{multirow}
+%\usepackage[hypertex]{hyperref}   %from Tomoki
+\usepackage{mathrsfs}
+%%%%%
+%\usepackage[dvips]{graphicx}
+%\topmargin -0.0in\oddsidemargin -0.01in \textheight 22cm \textwidth
+%15.5cm \pagestyle{plain} \baselineskip 30pt
+%\usepackage{multirow}
+\begin{document}
+\vspace{0.5cm}
+\begin{center}
+	\Large \bf  Higgs condensate and vortices from Ginzburg-Landau Lagrangian\\
+	\Large\bf   with magnetic-dependent coefficients 
+\end{center}
+
+\vspace{1cm} 
+\centerline{ Fu-Ping Peng$^{1}$, Xiao-Bing Zhang$^{1}$ and Yi Zhang$^{2}$}
+%\affiliation
+\centerline{\small $^{1}$ School of Physics, Nankai University, Tianjin  300071, China} 
+\centerline{\small $^{2}$ Department of Physics, Shanghai Normal University, Shanghai 200230, China}
+%\vspace{8pt}
+%\footnotemark{0} 
+\footnotetext{* zhangxb@nankai.edu.cn(Xiao-Bing Zhang) } \vspace{0.5cm}
+
+\begin{abstract}\rm \noindent
+By using an extended Ginzburg-Landau Lagrangian, we study the influence of rotated electromagnetic field in the scope of color-flavor-locked-type quark matter. We demonstrate that the rotated-charged Higgs modes respond sensitively to an applied magnetic background and thus Higgs condensate could emerge as the color-flavor unlocked excitations. Such a phenomenon is totally different from the previous-discussed magnetic response of charged quark and the so-called magnetic color-flavor-locked phase.
+%%%and neutral diquark condensate.
+%%, in addition to the known color-flavor-locked condensate, may be triggered by the magnetic response of rotated-charged Higgs modes.  
+After clarifying the Higgs-condensate qualitatively, we investigate its possible realizations as inhomogeneous vortex solutions. A superfluid-like vortex (string) is constructed firstly and then the theoretical possibility of topologically and energetically stable vortons is suggested.
+%%% in the situation including both kinds of condensates. These ies are suggested for the first time and their formation conditions and energy stabilities are investigated respectively.
+\end{abstract}
+%\pacs{11.10.Qc, 12.38.Aw,  25.75.Nq}
+% 12.39.Fe,, 12.38.-t}
+% \end{titlepage}
+% \maketitle
+% \vspace{2.0cm}
+
+\baselineskip 12pt
+%\vspace{0.2cm} \noindent  \vspace{10.8cm}
+
+%\bf Introduction-\rm
+\section{\bf Introduction}
+
+%\vspace{0.2cm}
+
+Strongly interacting matter under the influence of magnetic fields has attracted intensive interests
+in recent years,
+%%%%%, due to the realistic relevance to phenomenology in relativistic heavy-ion collisions
+%%and astrophysical objects in the universe, for recent reviews, 
+see, e.g., ~\cite{andersen2016phase,kharzeev2013strongly,miransky2015quantum}.
+In heavy ion collision experiments, a strong magnetic field up to $eB \sim 2m_{\pi}^2$ with $m_{\pi}$
+the pion mass, i.e., $B \sim 10^{18}\text{G}$ can be produced in non-central collisions at Relativistic Heavy
+Ion Collider (RHIC), and $B \sim 10^{20}\text{G}$ at Large Hadron Collider (LHC)~\cite{kharzeev2008,skokov2009}.
+For astrophysics objects in the universe, the magnetic fields as large as
+$B \sim 10^{14}$ - $10^{15}\text{G}$ exist on the surface of Magnetars. While the strength
+can reach $B \sim 10^{18}\text{G}$ in the interior of regular neutron stars, a theoretical upper limit to the magnetic field may stand as high as $B \sim 10^{20}\text{G}$ inside self-bound compact stars~\cite{dong2001,lai1991cold}.
+%%%%%
+% the magnetic field . %%like Magnetars, they maintain a . While the interior of regular neutron stars the magnetic field strength
+%can reach $B \sim 10^{18}\text{G}$. A theoretical upper limit to the magnetic field that a compact star
+%may stand as high as $B \sim 10^{20}\text{G}$~\cite{dong2001}. 
+%%%%%%%%%%%%%%
+Under such circumstances of strong magnetic fields,
+answer to the question of how the Quantum chromodynamics (QCD) phase structure can be modified remains
+one of the major theoretical challenges. 
+%%%%%%%%%%%%%%
+%For instance, at vanishing chemical potential, a general effect of magnetic field on the vacuum structure of QCD is an enhancement of the dynamical symmetry breaking, a phenomenon usually referred to as ``magnetic catalysis''~\cite{miransky2015quantum}. At zero temperature, recent lattice QCD study of the behavior of the $u$- and $d$-quark condensates in magnetic fields has confirmed the magnetic catalysis phenomena, however, for temperatures of the order of the crossover temperature, a decrease of the quark condensates is found, this is so called ``inverse magnetic catalysis'' effect at certain values of the magnetic field~\cite{bali2012,miransky2002,fukushima2012}.
+%%%%%%%%%%%%%
+Up to date, the mapping of QCD phase diagram onto the temperature and 
+magnetic field plane has not been firmly established.
+%%%
+
+Further, through intensive studies in past decades, it is realized that there exists so-called color
+superconducting phase of quark matter at high density regime (see, e.g.
+Refs.~\cite{alford2004dense,buballa2005njl}). In the scope of color superconducting matter, it is of
+great interest to investigate which modifications are induced by the magnetic-field background.
+%%%%%%%
+Besides its theoretical implication to the QCD phase diagram, this topic might be important for the physics of astrophysics objects since the inner region of compact stars is suggested to consist of color superconductors.
+%%%%%%%%%%%%%%%%%
+%%color superconductivity is likely to be observed 
+%%the star interior as well as magnetars are likely to have color-superconducting cores.
+%% because of its astrophysical applications. 
+%It is very likely that the inner region of compact stars consists of color superconductors. On the other hand, it is realized that strong magnetic background fields usually exist in such kind of environment, e.g. the neutron star interior and/or the so-called magnetars.
+%Therefore, a detailed study of the magnetic effect may be very  possible observation of color superconductivity as well as .
+%%%%%%%%%%%%%%%%%%%%%%%%
+As the most typical color superconductor, the color-flavor-locked (CFL) phase is widely believed to be
+the ground state of three-flavor QCD at extremely high density and low temperature~\cite{alford1998qcd}. Due to the
+diquark condensates formed in the CFL phase, the symmetry breaking pattern is
+\begin{eqnarray}
+G=SU(3)_{C}\times SU(3)_{L}
+\times SU(3)_{R}\times U(1)_{B} \rightarrow H=SU(3)_{C+L+R}\equiv SU(3)_{C+F},\label{cfl}
+\end{eqnarray}
+where the approximate symmetry $U(1)_{A}$ in $G$ and the discrete symmetries in $H$ have been ignored.
+It means that an original QCD symmetry, including color, flavor (left- and right-hand) and baryon number
+symmetries, is broken down to the color-flavor locked symmetry.
+The main feature relevant for magnetic effect is the rotated electromagnetic mechanism, namely an unbroken
+$U(1)_{\widetilde{Q}}$ group is embedded in the color-flavor locked subgroup where the rotated electric
+charge is defined by $\widetilde{Q}=Q_{F}\times {1}_{C}-{1}_{F}\times Q_{C}$ in the color-flavor space.
+As the spin-$0$ color superconductor, the diquark condensates in CFL are always neutral in the sense of
+rotated charge.
+Since CFL is not electromagnetic superconductor, there is no Meissner effect and the unscreened magnetic
+fields propagate unscreened inside the color-superconducting matter~\cite{alford1998qcd,alford2000magnetic}.
+In the situation of strong gauge coupling, the rotated electromagnetic field, as the combination of
+electromagnetic and gluon fields~\cite{alford1998qcd,alford2000magnetic}, is made up mostly of a usual
+electromagnetic field. Approximately, the rotated magnetic field can be described by an external background field
+$B$ and the unit of rotated charge can be given by an electron charge $e$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+By introducing an applied field $B$, there exist considerable changes in the properties of color-flavor-locked matter. 
+In the literatures this topic has been widely investigated within the phenomenological Nambu-Jona Lasinio (NJL)
+models with four-quark interactions \cite{ferrer2005magnetic,fukushima2008color,ferrer2006color,ferrer2007magnetic,sen2015anisotropic}. Due to the response of rotated-charged quarks to $B$, these studies were mainly devoted to the magnetic-field dependence of
+color-superconducting gaps. The resulting phase of color-flavor-locked matter is called as the magnetic color-flavor locked phase
+(MCFL). 
+%%%%%%%%%%%%%%%%%%%%%%
+%%From the NJL calculations, the splitting behavior of gaps is observed in the MCFL phase. Also, the gaps are found to display de Haas-van Alphen oscillation also \cite{ferrer2005magnetic,fukushima2008color}.      
+%%%%%
+%The NJL analytical derivation is valid in the limit of strong magnetic field. There, it is found that the large magnetic fields could enhance the specific gap \cite{ferrer2006color,sen2015anisotropic} which
+%might be considered as a generic magnetic catalysis.
+%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In the present work, we investigate the influences of rotated magnetic field within a generic Ginzburg-Landau (GL) framework. The model-independent method has been applied to study color-superconducting phase of dense QCD and the resulting 
+topological vortices for years, see, e.g., ~\cite{giannakis2002ginzburg,iida2002superfluid,balachandran2006semisuperfluid,nakano2008non,eto2014vortices,zhang2015magnetic}.
+%%%%%%%%
+%will be further explored via the systematic . 
+%%%%%%%%%%%%
+%Our attention focus on the case that the magnitude of magnetic field is larger than the threshold. 
+%Alternatively,  and the  can be studied in  %%%%%%%%%%%%%%%%%
+To account for color-flavor-locked matter, the GL Lagrangian is developed from the symmetry breaking pattern Eq.~(\ref{cfl}).
+In particular, the order parameter describing diquark condensates can be denoted by a complex $3\times3$ matrix. It is rather simple with respect to the case of a $72 \times 72$ matrix in NJL models. Within the GL framework the relevant degrees of freedom (dof) are the Higgs modes, i.e., fluctuations of diquark condensates, rather than the quark dof in a microscopic model.
+The studies in this paper is going to explore the magnetic response of rotated-charged Higgs modes. 
+For the first time, the charged Higgs-mode condensate is suggested to emerge in the presence of an applied field $B$.
+%% We stress that 
+Such kind of condensate originates from the excitations of charged, color-flavor-unlocked diquark condensates. 
+%
+This issue was not considered in the NJL models and it might shed light on an unknown aspect regarding magnetic effects on color-flavor-locked-type matter.
+%%%%%%%%%%%\emph{
+In addition to clarifying the Higgs condensate and its dynamics via a qualitative GL analysis, we are concerned about the possible realizations as inhomogeneous vortex solutions. 
+From the properties of CFL vortices as well as the symmetry consideration, the Higgs-condensate emergence is attributed to a simple $U(1)$ dynamical breaking preliminarily. 
+%%could be responsible for the $\delta$ condensate. 
+As a consequence, we construct the superfluid-like vortex solution for Higgs condensate which is very similar as 
+a $U(1)_B$ vortex consisting of the usual color-flavor-locked matter.
+%%MCFL is generated from $U(1)_{C+F}$ breaking, just like an . As the simplest
+%%physical picture, this possibility shall be taken as our .
+Moreover, the theoretical possibility of topologically and energetically stable vortons is pointed out in the situation with both color-flavor-unlocked Higgs condensate and color-flavor-locked diquark condensate.
+%% and  are considered at the same time. 
+The present study is a first step in fully understanding the effects of rotated-magnetic-field in the scope of high-density color-flavor-locked-type matter and should have potential applications in the physics of magnetars.
+%%astrophysical environment, e.g. inside magnetars.
+%ices%%In the literatures, the superfluid vortices and the so-called non-Abelian vortices have been suggested for .
+%%%%%%%
+%In recent years various types of vortices have been considered in color superconducting matter of dense QCD.
+%Within the GL framework, the superfluid vortices and the so-called non-Abelian vortices were suggested for
+%color-flavor-locked-type matter (see, e.g.
+%Refs.~\cite{balachandran2006semisuperfluid,nakano2008non,vinci2012spontaneous,
+%eto2014vortices,eto2010instabilities}).
+%%%%%%%%%%%%%
+
+This paper is structured as follows. After a brief review of the original GL Lagrangian accounting for CFL, in
+Sec.~\ref{sec:2}, particular emphases are placed on the magnetic response of charged Higgs modes and its
+consequences on the formalism. In Sec.~\ref{sec:3}, we study the formations of superfluid-like vortices and vortons 
+for different boundary conditions. Sec.~\ref{sec:4} is devoted to discussions of some open problems.
+
+\section{\bf GL formalism with $B$-dependent coefficients and Higgs condensate }
+%\subsection{
+\label{sec:2}
+\vspace{0.2cm}
+%\textbf{A. GL Lagrangian with the $B$-dependent coefficient}
+%\vspace{0.2cm}
+
+
+%
+
+The GL Lagrangian of most-symmetric CFL phase is developed from the symmetry breaking pattern in Eq.~(\ref{cfl}) and it is invariant
+under the original symmetries $G=SU(3)_C \times SU(3)_L\times SU(3)_R\times\times U(1)_B$. Within the GL framework, the
+diquark-condensate order parameter is denoted as a complex $3\times3$ matrix $\Phi_L$ and $\Phi_R$.
+As a simple situation, we assume that $\Phi_L = \Phi_R = \Phi$.
+Under the notation
+$i = 1, 2, 3 = u, d, s$ and $\alpha = 1, 2, 3 = r, g, b$, the matrix element $\Phi_{i \alpha}$ accounts
+for the pairing of quarks with non-$\alpha$ colors and non-$i$ flavors \cite{iida2002superfluid}, or might be expressed  as
+\begin{equation}
+  \label{eq:diquarkmatrix}
+  \Phi =
+  \begin{pmatrix}
+    \Phi_{gb}^{ds} &  \Phi_{gb}^{su} & \Phi_{gb}^{ud} \\
+    \Phi_{br}^{ds} &  \Phi_{br}^{su} & \Phi_{br}^{ud} \\
+    \Phi_{rg}^{ds} &  \Phi_{rg}^{su} & \Phi_{rg}^{ud}
+  \end{pmatrix},
+\end{equation}
+to account for possible pairings between the quarks with different colors and flavors.
+The diagonal elements belong to color-flavor-locked species whereas the non-diagonal elements, as
+color-flavor-unlocked species, are not allowed in the ideal CFL phase.
+
+
+If the rotated electromagnetic field $\vec{A}$ is included,
+to quartic order in $\Phi$,  a general GL Lagrangian 
+%referred in~\cite{iida2002superfluid,giannakis2002ginzburg} 
+is given by
+\begin{equation}
+\mathcal{L}= \frac{1}{4} (f_{\mu\nu})^2 +
+\text{Tr}\left[\kappa_3(\vec{\mathcal{D}}\Phi)^\dagger\vec{\mathcal{D}}\Phi
+  -\alpha\Phi^\dagger\Phi -\beta_2(\Phi^\dagger\Phi)^2\right]
+-\beta_1(\text{Tr}[\Phi^\dagger\Phi])^2 +\cdots ,\label{gl}
+\end{equation}
+where $f_{\mu\nu}$ is rotated electromagnetic field strengths and the covariant derivatives 
+\begin{equation}
+\vec{\mathcal{D}}\Phi =\vec{\nabla} \Phi -ie\vec{A} T_{\widetilde{Q}}\Phi.
+\end{equation}
+Note that the constant term for vanishing vacuum energy and the term for rotated gluonic fields have been
+ignored. Also the generator $T_{\widetilde{Q}}$ is different from the generator $T_{\text{EM}} =  \text{diag}(-2/3,1/3,1/3)$ which
+is the description of the flavors charge. For us, the generator $T_{\widetilde{Q}}$ is the 
+description of the rotated charges of quark pairing. 
+\subsection{Higgs modes and their masses as GL coefficients}
+\label{sssec:1}
+
+For the CFL phase, only the diagonal elements are involved in the diquark matrix, namely
+\begin{equation}
+  \label{eq:phi}
+  \Phi =
+  \begin{pmatrix}
+    d & 0 & 0 \\
+    0 & d & 0 \\
+    0 & 0 & d
+    \end{pmatrix}.
+\end{equation}
+We can recover Eq.~\eqref{gl} to the usual CFL phase by considering the properties of CFL condensates. 
+Since only the CFL condensates are allowed in the CFL phase and are rotated-charge
+neutral, they would not be affected by the rotated magnetic field.
+
+
+
+The vacuum expectation value (VEV) of the diquark condensate is
+\begin{equation}
+  \text{VEV}(\Phi)=\text{diag}(v,v,v) ,\label{cflground}
+\end{equation}
+where the diagonal elements have been assumed to be equal \cite{iida2002superfluid}. 
+By minimizing the GL potential, 
+the value of
+$v$ corresponds to a degenerated CFL gap and it is obtained from
+\begin{equation}
+  \label{eq:dvaccum}
+v^2 = -\frac{\alpha}{3\beta_1+\beta_2}.
+\end{equation}
+% Then the GL potential can be also rewritten as a Mexican-hat-shape form
+% \begin{equation}
+% \label{eq:dpotential}
+% \mathcal{V}_d \sim - \alpha(d^2 - v^2)^2.
+% \end{equation}
+Note that the coefficient $\alpha$ is responsible for the existence of color-flavor-locked condensate
+and hence is always negative, while the coefficients $\beta_1$ and $\beta_2$ are positive.
+
+
+According to the symmetry breaking pattern shown in the Eq.~(\ref{cfl}),
+the Higgs modes appear as fluctuations of diquark condensate around the
+CFL vacuum. Since the order parameter space is $G/H \simeq U(3)$, the Higgs modes are made up of the
+singlet field $\phi$ and the octet fields $\zeta^a$ ($a = 1, 2, \cdots, 8$). Explicitly, these
+collective modes can be given by perturbing the order-parameter matrix
+\begin{eqnarray}
+\Phi=v\textbf{1}_3+\frac{\phi+i\varphi}{\sqrt{2}}\textbf{1}_3+\frac{\zeta^a+i\chi^a}{\sqrt{2}}T^a,
+\label{pert}
+\end{eqnarray}
+where $T^a$ is the generators of $U(3)$ with $\text{Tr}[T^a T^b]=\delta^{ab}$.
+In Eq.~(\ref{pert}), the singlet field $\varphi$ and the octet fields $\chi^a$ correspond one to
+one to the Higgs fields $\phi$ and $\zeta^a$, respectively. They belong to the pseudo Nambu-Goldstone
+modes.
+
+Based on the Eq.~(\ref{gl}), the Higgs
+masses are obtained,
+\begin{eqnarray}
+m_\phi^2=\frac{-2\alpha}{k_3},\\ m_\zeta^2=\frac{4\beta_2}{\kappa_3}
+	v^2,\label{mhiggs}
+\end{eqnarray}
+which could be treated as the GL coefficients equivalently. In terms of these Higgs masses, the GL
+potential can be expressed in the form, i.e.
+\begin{eqnarray}
+\mathcal{V}_\phi=
+\frac{m_\phi^2}{12v^2}\kappa_3(\text{Tr}[\Phi^\dagger\Phi-v^2])^2,
+\label{glmphi}
+\end{eqnarray}
+and
+\begin{eqnarray}
+\mathcal{V}_\zeta=
+\frac{m_\zeta^2}{4v^2}\kappa_3\text{Tr}\left[\left<\Phi^\dagger\Phi\right>^2\right],
+\label{glzeta}
+\end{eqnarray}
+where the definition $\left<M\right>\equiv M-(1/N)\text{Tr}M$ is used for a $N\times N$ matrix $M$.
+Here the potential term $\mathcal{V}_\phi$ with the singlet Higgs mass $m_{\phi}$ accounts for the trace contribution.
+the potential term $\mathcal{V}_\zeta$ with the octet Higgs mass $m_{\zeta}$ represents the traceless contribution.
+On the other hand, the diquark-condensate order parameters are in general described by $\Phi_L$ and $\Phi_R$ which
+transform under the actions of left- and right-hand symmetries respectively.
+If Eq.~\eqref{gl} is expressed by $\Phi_L$ and $\Phi_R$, it is clear found that the trace contribution is relevant to the $\Phi_L^\dagger\Phi_L$ and $\Phi_R^\dagger\Phi_R$ only.
+Meanwhile the traceless contribution is relevant to not only $\Phi_L^\dagger\Phi_L$ and $\Phi_R^\dagger\Phi_R$ 
+but also $\Phi_R^\dagger\Phi_L$ and $\Phi_L^\dagger\Phi_R$.
+
+
+
+
+
+
+
+
+\subsection{An effective potential with in-medium Higgs mass}
+\label{sssec:2}
+%\vspace{0.2cm}
+
+Since the diagonal elements are neutral in term of the rotated-charge,
+they will be not influenced by the rotated magnetic field.
+But it does not mean that all the diquark matrix elements will not be influenced by the magnetic field.
+In fact, among these non-diagonal
+elements, excepts for $\Phi_{br}^{ud}$ and $\Phi_{rg}^{su}$ are neutral,  $\Phi_{gb}^{su}$, $\Phi_{gb}^{ud}$, $\Phi_{br}^{ds}$ and $\Phi_{rg}^{ds}$ have the
+nonzero charges and their rotated-charge $\widetilde{Q}$ are $+1,+1,-1,-1$  respectively.
+According to the rotated-charged properties of these diquark matrix elements,
+ the generator $T_{\widetilde{Q}}$ is given by 
+\begin{equation}
+T_{\widetilde{Q}} = \begin{pmatrix}
+            &    +1  & +1\\
+    -1 &            &      \\
+    -1 &            &
+\end{pmatrix}.
+\end{equation}
+Although these four charged matrix elements are not allowed in CFL phase,
+they respond to the magnetic field directly.
+
+
+On the other hand, these four charged diquark elements can be interpreted as charged Higgs modes
+in the language of Higgs modes.
+In essence, they are nothing but the recombination of the Higgs modes.
+If the magnetic field is switch on, they will be excited as Higgs excitation $\delta$ around CFL vacuum.
+Instead of Eq.~(\ref{eq:phi}),
+we define the diquark matrix  as follows:
+\begin{equation}
+  \label{eq:diquarkmatrix0}
+\Phi = \begin{pmatrix} v & \delta & \delta \\ \delta^* &  v & 0 \\ \delta^* & 0 & v\end{pmatrix},
+\end{equation}
+here we have assigned the known vacuum $v$.
+
+%%%%%%xiugaibufen
+Without loss generality, let us first apply Eq.~\eqref{eq:diquarkmatrix} to
+derive the response of charged Higgs modes. Assuming that the unscreened
+magnetic field $B$ is taken along the third spatial direction (the longitudinal
+direction), the rotated electromagnetic field makes sense in the transverse
+direction. The Landau gauge $\vec{A} = (0,xB,0)$ is chosen and the field 
+strength is $f_{12} =B$. Besides the trivial contribution $\frac{1}{2}B^2$,
+we focus on the gradient-energy contribution from the covariant derivative.
+In the rest frame, the gradient energy density in Eq.~\eqref{gl} reads
+\begin{equation}
+ v_\perp^2\text{Tr}(\mathcal{D}_\perp \Phi)^\dagger(\mathcal{D}_\perp \Phi)
++ v_\parallel^2\text{Tr}(\mathcal{D}_\parallel\Phi)^\dagger(\mathcal{D}_\parallel \Phi),
+\end{equation}
+where $v_\perp$ and $v_\parallel$ are the transverse and longitudinal
+velocities respectively. Also it is noticed that, for the matrix Eq.~\eqref{eq:diquarkmatrix},
+the rotated-charge operator $T_{\widetilde{Q}}$ may be given by
+\begin{equation}
+  T_{\widetilde{Q}} = \begin{pmatrix}
+              &    +1  & +1\\
+      -1 &            &      \\
+      -1 &            &
+  \end{pmatrix},
+  \end{equation}
+in the formal sense.
+% showing the expected separation between the longitudinal $D_\parallel$
+% and the transverse $D_\perp$ (to the direction of our concerned magnetic field).
+% Also we have ignored the const contribution of applied field $\frac{1}{2}B^2$ from $\frac{1}{4}(f_{\mu\nu})^2$,
+% since we are more interested in the dynamics of charged Higgs excitations.
+% In order to show the derivation result clearly, we write the covariant derivative on the transverse direction in particular
+% \begin{eqnarray}
+% \mathcal{D}_\perp \Phi =\partial_x \Phi
+% + \partial_y \Phi
+% + ie xB T_{\widetilde{Q}}\Phi.
+% \end{eqnarray}
+By considering the static field $\vec{A}$ and the covariant derivative
+$\mathcal{D}_\perp \Phi = \partial_\perp \Phi - iexBT_{\widetilde{Q}}\Phi$
+in the transverse direction, we obtain 
+the kinetic contributions in the transverse direction
+\begin{equation}
+   v_\perp^2\text{Tr}(\mathcal{D}_\perp \Phi)^\dagger(\mathcal{D}_\perp \Phi)
+  = 4|\partial_x \delta
+  + \partial_y \delta
+  + ie xB \delta|^2
+\end{equation}
+
+In order to derive the magnetic responses for the charged Higgs fields, 
+a generalization of the method described in~\cite{Ritus1985Quantum} for arbitrary
+charges is required.
+% to work in the 
+% momentum space, i.e., $\delta(\vec{r}) \rightarrow \delta(k)$.
+This method is originally developed
+by Ritus in order to determine the Green’s function
+of charged fermions in the presence of background magnetic field and then  extended to charged vector fields~\cite{Elizalde2004Neutrino}.
+In this method, the charged fields are transformed  to momentum space by using the Landau
+quantized wave functions $S_k(\vec{r})$ ~\cite{ferrer2007magnetic,Elizalde2004Neutrino}.
+% Using the Landau quantized wave function $S_k(\vec{r})$ described in Refs.~\cite{ferrer2007magnetic,Elizalde2004Neutrino},
+For the charged Higgs field $\delta(\vec{r})$, we have
+\begin{equation}
+\label{eq:transform}
+\delta(k) = \int d^3r S_k(\vec{r})\delta(\vec{r}),
+\end{equation}
+where
+\begin{equation}
+  S_k(\vec{r}) \sim \text{exp}(ik_y y + ik_z z)D_n(\sqrt{2eB}(x - k_y/eB)),
+\end{equation}
+with $D_n(x)$ the parabolic cylinder function of degree $n$. And the number $n$ denotes the Landau levels.
+Using the transform functions in Eq.~\eqref{eq:transform}, we can show that
+\begin{equation}
+  |\partial_x \delta + \partial_y \delta + ie xB\delta|^2 \rightarrow
+   |   \sqrt{(2n+1) eB} |^2 \delta(k)^2
+\end{equation}
+After performing the inverse transform again,
+ the gradient energy density on the transverse direction becomes $4 v_\perp^2(2n+1) eB\delta^2$.
+In the lowest Landau levels approximation, total of the gradient energy arrive at 
+ \begin{equation}
+\label{eq:derive}
+\text{Tr}\left[(\vec{\mathcal{D}}\Phi)^\dagger\vec{\mathcal{D}}\Phi \right] = 
+4 v_\parallel^2|\partial_z \delta|^2
+- 4 v_\perp^2 eB\delta^2.
+\end{equation}
+%%%%%%%xiugaibufen
+Eq.~\eqref{eq:derive} shows that the covariant derivatives provide  quadratic $\delta$  term $4 v_\perp^2 eB \delta^2$
+due to the external magnetic field is included.
+If we consider the original Higgs mass term $m_\zeta^2 \delta^2$,
+the value of the mass of the charged Higgs modes decreases and therefore become unstable.
+%%%%%%%%
+In fact, the instability  of the charged Higgs modes above have already been pointed out in our previous work  \cite{zhang2015magnetic}.
+As shown in Ref.~\cite{zhang2015magnetic}, we had considered the magnetic response of Higgs octet  and attributed it to such a change as $m_\zeta^2 \rightarrow (m_\zeta^{eff})^2$.
+ Also, it was pointed out that the value of $(m_\zeta^{eff})^2$ decreases with respect to the magnetic fields~\cite{zhang2015magnetic}.
+At the leading order of $eB$, the squared mass was expressed as
+\begin{equation}
+\label{eq:magneticmass}
+(m_\zeta^{eff})^2 \simeq m_\zeta^2 - v_\perp^2eB.
+\end{equation}
+Eq.~\eqref{eq:magneticmass} was derived from the magnetic response of Nambu-Goldstone modes and required  that the Nambu-Goldstone
+octet correspond one to one to the Higgs octet.
+
+For the purpose of handing the magnetic effect, we adopt the  replacement of magnetic-dependent coefficient (or in-medium mass) for the charged-Higgs modes
+$m_\zeta^2 \rightarrow (m_\zeta^{eff})^2$. 
+In fact, this treatment is equivalent to
+introducing the electromagnetic field in the covariant derivative term directly.
+Physically speaking, if understanding the magnetic
+effect as a relative rotation of the $\Phi_L$ and $\Phi_R$ orientations, therefore, these terms have different
+magnetic responses. Since the traceless term $\mathcal{V}_\zeta$ has additional $\Phi_L^\dagger\Phi_R$ and  $\Phi_R^\dagger\Phi_L$ contributions, it should be affected much more
+ strongly affected than the other terms.
+Now we keep the original covariant derivatives term unchanged and take such a replacement about $\mathcal{V}_\zeta$
+\begin{equation}
+\label{eq:vzeta}
+ \mathcal{V}_\zeta=
+\frac{(m_\zeta^{eff})^2}{4v^2}\kappa_3\text{Tr}\left[\left<\Phi^\dagger\Phi\right>^2\right].
+\end{equation}
+Then  by substituting  Eq.~\eqref{eq:diquarkmatrix} in Eqs.~\eqref{glmphi} and ~\eqref{glzeta},
+the GL potential  has the following form
+\begin{equation}
+\label{eq:deltapotential1}
+\mathcal{V}(\Phi) \sim  \alpha' \delta^2 + \beta'\delta^4 + \cdots,
+\end{equation}
+with
+\begin{eqnarray}
+  \label{eq:coefficients}
+\alpha' \equiv (m_\zeta^{eff})^2\,
+\end{eqnarray}
+and
+\begin{eqnarray}
+  \label{eq:coefficients2}\beta' \equiv (\frac{(m_\zeta^{eff})^2}{6v^2} + \frac{4 m_\phi^2}{3v^2}).
+\end{eqnarray}
+In Eq.~\eqref{eq:deltapotential1},  $\delta^2$ term is derived from the covariant derivatives and corresponds to the contributions of the instability of the charged Higgs mode. Physically speaking, it is originated from $\Phi_L$ and $\Phi_R$ violated by magnetic field.
+As for the medium dependent part in $\delta^4$ term, it is reasonable although Eq.~\eqref{gl} provides no obvious magnetic relevant term.
+The reason is that the medium dependent part corresponds to not only the first order term of $eB$ but also the contributions from $\Phi_L$ and $\Phi_R$ relevant term, If without the replacement $m_\zeta^2 \rightarrow (m_\zeta^{eff})^2$, it  should in principle be originated from  the term such as $\kappa_3\text{Tr}[(\mathcal{D}\Phi_L)^\dagger(\mathcal{D}\Phi_R) \Phi_R^\dagger\Phi_L]$.
+So far, we have constructed an effective potential for the charged Higgs excitation. Noting that all the magnetic effects
+have been attributed to the medium-dependence coefficient $(m_\zeta^{eff})^2$, while the covariant derivatives keep original.
+In fact, this treatment above is more convenient for us to explore the dynamics of the charged Higgs condensate later.
+\subsection{Dynamics of Higgs condensate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%%%%%{\textcolor[r,g,b]{1.00,0.00,0.00}{ZHANG0630corrected BELOW}}
+
+On the other hand, Eq.~(\ref{eq:deltapotential1}) can be regarded as an effective potential for the scalar field $\delta$. 
+According the standard GL analysis, the possibility that $\delta$ becomes condensed arises as long as the coefficient $\alpha'$ in quadratic-order term is negative and the quartic-order coefficient $\beta'$ is positive. 
+%%%%%%%
+As defined by Eq.~(\ref{eq:coefficients}), the coefficient $\alpha'$ corresponds to 
+the squared mass for charged Higgs modes.
+Due to the magnetic effect Eq.(\ref{eq:magneticmass}), it does have chance to take a negative value in the presence of magnetic fields.
+%%Once $\alpha'$ becomes negative, it is not the known squared mass for Higgs octet in the CFL phase. 
+In this case, the charged Higgs modes actually behave as unstable modes since they possess the negative energy such as $E^2(k=0)=(m_\zeta^{eff})^2<0$.
+%%%understanding Eq.~(\ref{eq:deltapotential1}) as a Mexican-hat shape potential, the negative value of the $\delta^2$ coefficient means that these unstable modes are excited and eventually leads to a new
+%. 
+As well known, it is excitation of unstable modes around the original minimum to lead to the emergence of new condensation as well as the presence of new vacuum.
+By minimizing Eq.~(\ref{eq:deltapotential1}), indeed, the new vacuum $v_\delta$ is given by
+\begin{equation}
+\label{eq:vacuumexpectation}
+v_\delta^2 = \frac{- \alpha'} {2\beta'},
+\end{equation}
+which makes sense for the negative $\alpha'$ and the positive $\beta'$. 
+Correspondingly, the effective potential may be rewritten as a Mexican-hat-shape form
+\begin{equation}
+\label{eq:deltapotential}
+\mathcal{V}_\delta \sim - \alpha'(\delta^2 - v_\delta^2)^2.
+\end{equation}
+The dynamical mechanism for the condensation of charged Higgs modes is not strange. 
+In some sense, it is analogous to what happens for the color-flavor-locked diquark condensate $d$. The latter emerges provided $\alpha$ is negative in the potential $\mathcal{V}_d \sim - \alpha (d^2 - v^2)^2$.
+%% Different from the CFL vacuum, the new introduced condensate. provided $\alpha$ and $\alpha'$ are negative.
+%the negative coefficient is responsible for the excitation of unstable modes and then the additional condensate $\delta$. 
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%
+%there are some of differences in the two cases. While $d$ does not respond to magnetic field directly, $\delta$ originates from magnetic response of charged Higgs modes. Thus, the latter triggers the new and its introduction essentially comes from the non-Abelian feature of Eq.(\ref{cfl}) and the rotated charge defined by an unbroken $U(1)_{\widetilde{Q}}$ symmetry.
+%%%%%%%%%%%
+%The GL analyses with the $\delta$ condensate will provide more rich physics
+%%%%%%%%%%%%%%%
+%%%%%%%%%
+
+In view of that $\delta$ originates from the non-diagonal elements of $\Phi$, on the other hand, such condensate is of the color-flavor-unlocked species which is prohibited in the CFL phase.
+Physically speaking, it should be associated with the phenomenon that a rotated magnetic field causes the orientation of $\Phi_L$ different from that of $\Phi_R$ and thus makes the $SU (3)_{C+L+R}$ symmetry to be broken spontaneously.
+%%perturbed around the CFL vacuum.
+%s leads to that $\Phi=\Phi_L=\Phi_R$is violated and thus the color-flavor-locked symmetry (exactly, .
+In the original GL Lagrangian respecting the chiral symmetry, only the traceless term with Higgs octet mass involves the relevant components such like $\Phi_R^\dagger\Phi_L$ and/or $\Phi_L^\dagger\Phi_R$.
+%%% whereas the other terms consist of $\Phi_L^\dagger\Phi_L$ and $\Phi_R^\dagger\Phi_R$ only. 
+Thus, the magnetic field plays its role through the in-medium squared mass for charged Higgs modes mainly. Also, this is the reason why the present-discussed color-flavor-unlocked condensate be called as Higgs condensate equivalently.
+%%%%%%%%liu-xia-lai%%%%%%%%
+%, the Higgs condensate originates from the excitations of non-diagonal
+%elements of $\Phi$ in the presence of a rotated magnetic field.
+%To explore its effect within the GL framework, the two of basic steps are as follows.
+%First of all, without losing generality, the diquark-condensate order parameters are
+%described by $\Phi_L$ and $\Phi_R$, which transform under the actions of left- and right-handsymmetries respectively. In the simplified Lagrangian with $\Phi=\Phi_L=\Phi_R$ (Eq.(\ref{gl})), the terms are actually made up of different components.
+%For the $\beta_2$ term, not only $\Phi_L^\dagger\Phi_L$ and
+%$\Phi_R^\dagger\Phi_R$ but also $\Phi_R^\dagger\Phi_L$ and
+%$\Phi_L^\dagger\Phi_R$ are taken into account. Meanwhile, the
+%$\alpha$ and $\beta_1$ terms consist of $\Phi_L^\dagger\Phi_L$ and
+%$\Phi_R^\dagger\Phi_R$ only. If understanding the magnetic effect as a relative rotation of the $\Phi_L$ and $\Phi_R$ orientations,
+%therefore, these terms have different magnetic responses. The $\beta_2$ term ( equivalently, the potential $\mathcal{V}_\zeta$ )
+%should be affected much more strongly than the other terms.
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%ZXB0629%%%%%%%%%%
+% 
+As have elaborated, the sign of $\alpha'$ determines whether or not Higgs condensate emerge.
+Obviously, $\alpha' \rightarrow 0$ can yield the threshold value $B_0$ for the emergence of Higgs condensate. 
+%%the  $B_0$ obtained from the vanishing $\alpha'$is a signature of the condensate and 
+Within the GL framework, there exist some of uncertainty in the numerical estimate of $B_0$.
+Throughout the current work, we will consider the simplifications 
+%%%%%{\textcolor[r,g,b]{1.00,0.00,0.00}{$\kappa_3=1$}} CORRECTED%%%%%%%
+$\kappa_3=1$ and $\beta_1=\beta_2=\beta$. 
+By taking $v_\perp^2=1/3$ into account and adopting the $\mathscr{O}(1)$ coefficient $\beta=\beta_2\simeq${0.5} \cite{balachandran2006semisuperfluid}, the threshold magnetic field $eB_0 = 12\beta_2 v^2 \simeq 6v^2$ is obtained from Eq.(\ref{eq:magneticmass}). Instead of the GL coefficient $\alpha$, furthermore, the physical quantity $v$ will be regarded as another parameter.
+%%%%and simply taking the order-one coefficients .
+%This result is in consistent with that achieved from the effective Lagrangian for NG
+%modes~\cite{ferrer2007magnetic}. Physically, the agreement of two different analyses is due to
+%the fact that the NG modes correspond one to one to the Higgs modes within the GL framework.
+If choosing $v = 50$MeV, the threshold value of magnetic field could reach the
+order of $10^{17}\text{G}$. Numerically, such a magnitude is comparable to the estimated value of
+magnetic fields in the core of neutron stars, but it is less than the theoretical upper
+limit $10^{20}\text{G}$ inside self-bound magnetars~\cite{dong2001,lai1991cold}.
+%%%%%%%%%%%%%%%
+
+Also the constraint $\beta'> 0$ needs to be introduced; otherwise, the emergence of Higgs condensate is not
+theoretically controllable. Noticing that the effective coefficient $\beta'$ is partially magnetic-field dependent, as defined in Eq.~(\ref{eq:coefficients2}), we find that the positive $\beta'$ happens for $B \leq 6 B_0$ approximately.
+%%%%%CHECK!%%%%%%%
+Thus, our concerned condensate is valid for $B > B_0$ and $B < 6 B_0$,
+which still correspond to relatively weak fields.
+%%, say,$B \geq 9 B_0$ , which is beyond the scope of our consideration.
+To this end, we admit that the above numerical estimates are very rough. The present scheme that the CFL gap $v$ is simply treated as a known parameter is in contrast to the observation from phenomenological NJL models.
+In the GL approach, we were not able to obtain the magnetic dependence of $v$ since the quark dof are not incorporated explicitly,  see details in the concluding remark of Sec.~\ref{sec:4}. 
+%%%%%%%%%%%%%%%%%%
+%and the numerical estimate Eq.~(\ref{eq:magneticmass}),the vacuum defined by Eq.~(\ref{eq:vacuumexpectation}) is expressed as
+%\begin{equation}\label{eq:vdelta2}v_\delta = v \Big(\frac{3eB-36v^2}{108v^2-eB}\Big)^{1/2}.\end{equation}
+%Eq.~(\ref{eq:vdelta2}) is valid only for $B > B_0$ and $B < 9B_0$. Numerically, the former
+%corresponds to $eB > 12v^2$, which can be seen from the numerator, and the latter to $eB < 108v^2$
+%from the denominator in Eq.~(\ref{eq:vdelta2}). Again, as mentioned before, the latter originates
+%from the constraint of $\beta'> 0$.Obviously, $v_\delta$ keeps an increasing function of magnetic field.
+%%With increasing magnetic fields, the magnitude of $v_\delta$ is possible to
+%%become dominant (relative to $v$). 
+%%In the present GL analysis, the so-called ``strong field" means that $B$ is in a regime
+%$ B_0 < B \ll 9 B_0$. Note that, for such a finite regime,
+%the ratio $v^2/eB$ can be safely regarded as a small quantity and the numerator of
+%Eq.~(\ref{eq:veffchanged}) provides a more obvious dependence than the denominator part.
+%%%%%%
+%%
+%%%%%%%%%%%%%%%peng%%%%%%%%%%%%%%%%%
+%%%%%%%%
+%For the above result, we should devote ourselves to  rather than the $\mu_q$ dependence.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%The similarity becomes invalid completely in vicinity of the inflection point shown in Fig.~\ref{fig:1}. 
+%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%These charged Higgs modes have been understood as unstable modes with the negative energy like Eq.(\ref{eq:magneticmass}). %They are excited and eventually leads to a new stable vacuum and a less symmetric ground state. This is a typical
+%%%%%%%%%%
+%%%As a 
+%%, due to the lack of quark/gluon dof.%%%%%%%%
+%% %%%%%%
+
+
+\section{\bf Vortex solutions of Higgs condensate}
+\label{sec:3}
+\vspace{0.2cm}
+
+The above-defined condensate is different from color-flavor
+locked condensate in CFL vacuum.
+In the view of properties of quark pairing, it is a color-flavor unlocked condensate
+and has non-zero value of rotated charges.
+From aspects of quasiparticle excitation, it is
+defined as a fluctuation around CFL vacuum.
+More specially, it is charged Higgs field originated from $SU(3)_{C+F}$
+ symmetry spontaneously breaking.
+If the magnetic field is included,
+those charged Higgs field is unavoidably affected by the magnetic field.
+We  have already token a crude estimate to determine whether or not the 
+charged Higgs field condenses.
+As discussed in Sec.~\ref{sec:2}, the energy cost of creating the Higgs-like condensate
+is mainly determined by Eq.~\eqref{eq:deltapotential1}.
+From Eq.~\eqref{eq:deltapotential1}, 
+it is found that the charged Higgs field is excited 
+to minimize the system energy
+and condensed when $B >B_0$.
+
+
+When the magnetic field is getting larger, the original
+symmetry pattern is broken further, $SU(3)_C \times SU(3)_F \rightarrow SU(2)_{C+F}$.
+For the homogenous state, it is called as the MCFL
+phase~\cite{ferrer2005magnetic,ferrer2006magnetic}. 
+Owing to the original symmetry is broken,
+the CFL vacuum  disappear and then the charged  Higgs-like condensate 
+built on the CFL vacuum  is difficult to be realized.
+
+
+
+As for possible inhomogeneous solutions of the
+Higgs-like condensate,
+from the discussion of Sec.~\ref{sec:2}, we can notice that the
+transverse momentum space distribution has been modified by 
+the magnetic field.
+It may lead to  inhomogeneous condensate solutions 
+have such $\sim e^{-ik_y y}f(x)$ form in our convention.
+From experience of the conventional type II superconductivity,
+these topological solutions
+prefer periodic lattice domains (e.g. Abrikosov vortices) to minimize the energy.
+Owing the same reason that 
+the original symmetry is broken, such Abrikosov-like inhomogeneous solutions
+is also invalid.
+
+
+
+
+  
+
+
+
+Although the original symmetry pattern  is broken,
+It does not mean that these Higgs-like inhomogeneous solutions are not possible.
+In fact, there exist possible mechanism to  make
+ topological objects realize in the core of CFL vortices. 
+For the CFL vortices, they are originated from symmetry spontaneously breaking, 
+for example  $U(1)_B$ superfluid vortices and the non-Abelian CFL vortices
+originated from $U(1)_B$ 
+and $SU(3)_{C+F}$ symmetry spontaneously breaking respectively.
+One of important properties of these CFL vortices is that
+the emergence of those CFL vortices is regardless with an external magnetic field.
+Therefore it is convenient for us to choose
+those CFL vortices solutions as background in the following discussions.
+In a given CFL vortices background, when the color-flavor locked symmetry is violated,
+it was found that
+the diagonal elements in the CFL vortices solutions are not equivalent, 
+for example in the core of
+non-Abelian vortices~\cite{balachandran2006semisuperfluid,nakano2008non,eto2009color}.
+In~\cite{iida2005magnetic}, it  pointed out similar situation that the color-flavor
+unlocked species  emerge in the core of a $U(1)_B$ vortices in the presence of the magnetic field
+\footnote{Different from our cases, they have introduced external electromagnetic field and
+gluon field rather than only the rotated electromagnetic field}.
+As for us, although the original symmetry pattern is broken, the residual symmetries $SU(2)_{C+F}$
+allow the presence of a color-flavor unlocked condensate in the core of
+CFL vortices.
+As a consequence,
+it is important for us to check the possibility of Higgs-like condensate and the corresponding
+topological structure in the core of the given CFL vortices background.
+
+Before going the specific, we firstly give a brief review on the known CFL vortices.
+%% diquark condensate.
+%%possible topological vortices consisting  .
+As seen in Eq.~(\ref{cfl}), the original QCD symmetry $G$ is broken to
+the color-flavor locked symmetry $H$.
+%,
+%\begin{equation}
+%  \label{eq:hgroup}
+% H =SU(3)_{C+F} \times Z_3.
+%\end{equation}
+Thus, the diquark matrix $\Phi$ can be parameterized in the
+topological space
+\begin{equation}
+  \label{eq:cflvortexgroup}
+  \frac{G}{H} \simeq \frac{SU(3) \times U(1)_B}{Z_3}  \simeq U(3),
+\end{equation}
+where $Z_3$ is a discrete symmetry.
+Since the symmetry $U(1)_B$ is broken spontaneously, on the one hand, a superfluid vortex can be generated.
+In the cylindrical coordinates, the spatial configuration for a minimal-wound CFL vortex reads
+\begin{equation}
+  \label{eq:bvortexphi}
+\Phi =vf(r)e^{i \theta} \texttt{diag}(1,1,1),
+\end{equation}
+and equivalently
+\begin{equation}
+ d = vf(r)e^{i\theta}. \label{eq:bvortex}\end{equation}
+%due to Eq.~(\ref{eq:phi}). 
+There, the polar angle $\theta$ originates from $U(1)_B$ breaking and
+$f(r)$ is the profile function with the boundary
+conditions $f(0) = 0$ and $f(\infty) =1$.
+
+Because of the non-Abelian property of Eq.~(\ref{eq:cflvortexgroup}), on the other hand, 
+there should exist more complicated structure for the diquark-condensate matrix $\Phi$. For instance, the
+diagonal matrix elements might not degenerated and/or the non-diagonal elements might make sense in somewhat conditions.
+In recent years, the topological object called as non-Abelian vortices has been suggested for
+CFL.
+% more recently.   and the resulting object is . For instance,
+%a particularly-interesting   the
+Its typical minimal-wound solution is given
+as~\cite{balachandran2006semisuperfluid,nakano2008non,eto2009color}:
+%%%%%%%%%%%
+%%%%%%%
+\begin{equation}
+  \label{eq:nvortex}
+  \Phi = v\begin{pmatrix}
+   f(r)e^{i\theta} & & \\ & g(r) & \\ & & g(r)
+  \end{pmatrix}.
+\end{equation}
+%%which may be described by two of independent vortex solutions also~\cite{balachandran2006semisuperfluid}.
+The characteristic feature of the non-Abelian vortices
+is that the color-flavor-locked symmetry breaking pattern is violated. In the vicinity of core of such kind of vortices, it is pointed out that the locked symmetry $H={SU(3)_{C+F}}$ is broken to
+$H' =U(1)_{C+F} \times SU(2)_{C+F}$ \cite{nakano2008non,vinci2012spontaneous}.
+%%%also, namely $H={SU(3)_{C+F}} \rightarrow H' =U(1)_{C+F} \times SU(2)_{C+F}$
+%% with Eq.~\eqref{eq:nvortex},
+The Nambu-Goldstone modes associated with this breaking are of the orientational zero modes and they appear in the
+topological space
+\begin{equation}
+  \label{eq:cp2}
+ \frac{H}{H'} = \frac{SU(3)_{C+F}}{U(1)_{C+F} \times SU(2)_{C+F}} = CP^2.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% the formation of CFL vortices itself bores no relation to an
+%external magnetic field. In other words,
+The two kinds of CFL vortex solutions could be 
+% both $U(1)_{B}$ superfluid vortex and non-Abelian vortices are
+generated spontaneously regardless of an external magnetic field.
+When the applied fields such as $B > B_0$ are introduced, let us assume that Higgs condensate emerges in the vicinity of the core of non-Abelian vortices. Note that the color-flavor-locked symmetry becomes broken explicitly as \cite{ferrer2007magnetic}
+\begin{eqnarray}
+H\rightarrow M=SU(2)_{C+F},
+\label{cfl2}\end{eqnarray}
+in the presence of magnetic fields.
+If enforcing such magnetic-induced breaking, the remaining subgroup $H'$ is broken to $M =SU(2)_{C+F}$. In this case, the Higgs condensate $\delta$ inside the CFL vortex core is parameterized in the topological space
+\begin{equation}
+  \label{eq:mcfsymm}
+ \frac{H'}{M} = \frac{SU(2)_{C+F} \times U(1)_{C+F}}{SU(2)_{C+F}} = U(1)_{C+F}.
+\end{equation}
+It underlines that the $U(1)_{C+F}$ breaking is possible to be responsible for the Higgs-condensate emergence.
+All through this paper we focus on such a specific ansatz in order to explore the generations of vortex solution consisting of $\delta$.
+%%%%
+%, say the $\delta$ existence near the CFL vortex core, is necessary for a spontaneous breaking and thus the formation of $\delta$ vortices.
+%To this end, we emphasize that the explicit symmetry breaking $H \rightarrow M$ itself does not lead to %%Because of the important role played by $\delta$ at large $B$, 
+% it in the presence of an applied field $B$, .
+%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.2cm}
+\textbf{A. Superfluid vortex formation }
+\vspace{0.2cm}
+
+Just like the usual $U(1)_B$ vortex in the CFL matter, a superfluid-like vortex consisting of $\delta$ can be generated from $U(1)$ breaking. Similar as Eq.~(\ref{eq:bvortex}), the vortex (string) configuration reads
+%for the resulting $\delta$ string is
+\begin{equation}
+	\delta= v_\delta f(r) e^{i\theta}.\label{mcflvortex}
+\end{equation}
+This is the simplest possibility for the $\delta$ vortices so that we discuss it 
+as the first step.
+%%ere the phase angle $\theta$ arises from $U(1)_{C+F}$ breaking.
+%%%Based on the above-mentioned symmetry consideration,  It is . 
+%As 
+%%%%%%%%%%%%%%%%%%%%
+
+As mentioned in Sec.~\ref{sec:2}, the effective Lagrangian for Higgs condensate has been simplified as 
+\begin{equation}
+\label{eq:mcflvorticehamilton}
+ \mathcal{L}_\delta = (\partial \delta)^* (\partial \delta) - \frac{\alpha'}{4}\delta^2 - \frac{\beta'}{4}\delta^4,
+\end{equation}
+and equivalently
+\begin{equation}
+  \label{eq:vortond}
+  \mathcal{L}_\delta = (\partial \delta)^* (\partial \delta) + \frac{\alpha'}{8 v_\delta^2}(\delta^2 - v_\delta^2)^2.
+\end{equation}
+%%instead of the original GL formalism with the matrix $\Phi$.
+%%Instead of introducing rotated electromagnetic field through the covariant derivative, 
+%%pretending to deriving a Lagrangian through 
+There we attributed magnetic effect to the in-medium coefficients.
+%%${\alpha'}$ and ${\beta'}$ in the above equation.
+Obviously the present treatment is convenient for the following studies.
+% of the $\delta$ vortices.
+%purpose of , it to employ the reduced Lagrangian of 
+%%%%%%%%%%
+By inserting Eq.(\ref{mcflvortex}) into the Euler-Lagrange equation, we obtain the profile function from
+%of $\delta$-string
+\begin{equation}
+\label{eq:profilefunction}
+ f'' + \frac{f'}{r} -\frac{f}{r^2} - (\frac{\alpha'}{4} + \frac{\beta'}{2} v_\delta^2 f^2)f=0,
+\end{equation}
+where $f'$ and $f''$ denote the first- and the second-order derivatives of $f(r)$ with respect to $r$,
+respectively. 
+%%Eq.~(\ref{eq:profilefunction}) is magnetic-field dependent as the coefficients $\alpha'$ and $\beta'$ are involved.
+%% the properties for  are expected different.
+In Fig.~\ref{fig:2}, the profiles of $\delta$ string with two typical magnetic-field values (see the
+solid and dashed lines) are plotted. 
+%With varying magnetic fields, the shape of the profiles is changed.
+For a comparison, we apply the solution Eq.~(\ref{eq:bvortex}) for the $d$ string 
+as an example of CFL vortices.
+%%%%%%%%%%%%%consider a simple $U(1)_B$ vortex solution only 
+%and yield the profile equation 
+%\begin{equation}
+%  \label{eq:bvortexprofile}
+%  f'' + \frac{f'}{r} -\frac{f}{r^2} - (\frac{\alpha}{3} + \frac{8}{3}\beta v^2 f^2)f=0.
+%\end{equation}
+%in a similar way.
+% the Lagrangian of $d$.
+%%%%%for $d$-string
+%%\begin{equation}   \label{eq:bvortexlag}
+% \mathcal{L}_d = (\partial d)^* (\partial d) - \frac{\alpha}{3} d^2 - \frac{2 \beta}{3} d^4.
+%\end{equation}
+%%%%%%%%%%%%%%%%%%%
+The corresponding profile function, being magnetic-field independent, is given by the dotted line in Fig.~\ref{fig:2}. A significant shape difference between the $d$- and $\delta$-profiles is observed.
+Utilizing the characteristic radii of normal core in the two kinds of $U(1)$ vortices, it is clear that
+the characteristic radius $R_d$ is far larger than the radius $R_\delta$.
+%%
+This result is not surprising. According to our assumption, the $\delta$-string generation happens in
+the core region of non-Abelian vortices. It means that the vortex-core size of the latter is required
+to be larger than that of $\delta$ string. In the scope of CFL vortices, the radius of $U(1)_B$ vortex $R_d$ ususally exceeds the mean radius of non-Abelian vortices. In this sense, the
+above requirement is turned into a simple relation, $R_d > R_\delta$, as observed in Fig.~\ref{fig:2}.
+%%
+
+\begin{figure}
+	\includegraphics[width=4in]{2.eps}
+	\caption{The profile functions of $\delta$ string with $eB = 4eB_0$ (red solid line) and
+    $eB = 5 eB_0$ (green dashed line) and the profile function of $d$ string (dotted line).}
+	\label{fig:2}
+\end{figure}
+
+Moreover, it is interesting to derive the formation condition for $\delta$ string in a more formal way.
+%For an usual superfluid string, i
+It is well known that the magnitude of $R$, as a correlation length of the concerned condensate, may be
+estimated by an inverse mass of the Higgs modes associated with $U(1)$ breaking~\cite{vilenkin2000cosmic}.
+%%%%%%%%%%%
+%%%%%%%
+In the CFL case, the inverse mass of $\phi$ mode determines $R_d$ essentially.
+%%%is decided by $m_\phi^{-1}$  (since the Higgs mode $\phi$ is responsible for $U(1)_{B}$ breaking).
+By considering the Lagrangian of $d$ (see the Eq.~(\ref{eq:vortonb}) below), $R_d$ is estimated to be
+$(-\alpha/3)^{-1/2}$.
+%%
+Similarly, $R_\delta$ is found to be about $(-\alpha'/4)^{-1/2}$ from Eq.~(\ref{eq:mcflvorticehamilton}).
+%%%%%%%%
+%Note that in our case the $\zeta$ mode is defined in CFL and it is not associated with $U(1)_{C+F}$
+%breaking .
+%%square mass of $\zeta$ octet (being negative in the presence of magnetic field) does not decide the radius
+%%$R_\delta$. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Based on these estimates, the relation $R_d > R_\delta$ is further turned into
+$- 3\alpha' > - 4\alpha$. It behaves as the forming condition for $\delta$ string and corresponds to the region of magnetic field 
+$eB > - 4\alpha+12\beta_2 v^2$. Numerically, the region is about $eB > \frac{7}{3} eB_0$ with the simplification $\beta_1=\beta_2=\beta = 1$.
+The situations $eB = 4eB_0 $ and $5eB_0$ given in Fig.~\ref{fig:2} clearly fulfill the condition.
+%%%%%%%%%%%%%%%%%%%
+Also, the shape change of $\delta$-string profiles in Fig.~\ref{fig:2} is easily explained 
+%%%. Utilizing the language of characteristic radius again, this result is easily understood 
+from the $B$ dependence of $R_\delta$. 
+%%With increasing magnetic field, the value of $-\alpha'$ becomes larger such that the value of $R_\delta$ is small relatively.
+%%This is the reason why the spatial size of $\delta$-string profile tends to be suppressed as shown.
+
+Finally, we briefly discuss the kinetic energy of $\delta$ string per length unit. 
+%%Physically, such kind of linear tension might be roughly given by the area of profile function versus $r$. From Fig.~\ref{fig:2},
+%%the difference in areas under two $\delta$-profiles indicates the existence of the $B$ dependence of string tension.
+%%%%%%%%%%%%%%%%%%
+%%Without loss of generality, the definition of string tension is expressed as
+%\begin{equation} \mathcal{T} = \int^{2\pi}_{0}d\theta \int^L_{R_\delta} \mathcal{H} rdr \label{eq:tension},
+%\end{equation}
+%where $\mathcal{H}$ denotes the system Hamiltonian.the $\delta$-profile equation 
+By using Eq.(\ref{eq:profilefunction}), we ignore the constant
+contribution and give the asymptotic expression of string tension 
+\begin{equation}
+  \label{eq:tension1}
+  \mathcal{T} \sim v_\delta^2 ln\frac{L}{R_\delta}.
+\end{equation}
+%%%%which can also be derived from the quantization of $U(1)$ string.
+As a cut-off constant, $L$ is introduced to account for the total radius of a superfluid vortex. 
+%%and it is treated as a cut-off constant in this subsection.
+%%,at which the boundary conditions are $f =1$ and $f' =0$.
+%%%
+Noticing that $v_\delta$ and $R_\delta$ have the opposite dependences, the tension energy behaves as an increasing function of $B$.
+%Based on Eq.~(\ref{eq:tension1}), let us examine the magnetic-field dependence of $\delta$-string tension.
+% stronger fields
+%With increasing $B$, the vacuum expectation $v_\delta$ increases 
+%%steadily. This point is easily found in Eq.~(\ref{eq:vacuumexpectation}). On the other hand, 
+%whereas the vortex-core radius has an opposite dependence.
+%%, i.e. its value slightly decreases as shown in Fig.~\ref{fig:2}). With increasing $B$, t
+%Therefore, the $\delta$-string tension energy behaves as an increasing function of $B$ and its
+Also, the logarithmic-divergent tendency becomes much obvious for stronger fields.
+%%% so that such kind of straight, global string might have instability in a
+%% made up of the Higgs condensate only.
+%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{0.2cm}
+\textbf{B. Formation of vorton structure }
+\vspace{0.2cm}
+
+Now we turn to a more complicated situation where both of condensates ($\delta$ and $d$ ) exhibit the
+spatial-dependent properties simultaneously. 
+%Instead of the above-discussed picture, t
+There exists the theoretical possibility that the two strings from $U(1)$ breaking allow for the existence of 
+a topologically and energetically stable vorton. The scenario of vortons ( known as string loops, vortex rings also ) was first considered in the scope of cosmic string~\cite{vilenkin2000cosmic,witten1985superconducting,davis1988physics1,davis1988physics2,haws1988superconducting}.
+For color superconducting quark matter, it was studied in the physical environment with quark flavor asymmetry~\cite{kaplan2002charged,buckley2002superconducting}. There the condensations of two Nambu-Goldstone modes, say $K^0$ and $K^+$ condensates, were introduced. As the $K^+$ and $K^0$ condensed strings are generated from $U(1)$ breaking,  
+their coexistence is possible to support a stable vorton under somewhat conditions.
+%%%%%%%%%%
+%the vorton formation  case of introducing the condensates of , in the CFL environment. %%%%%%
+%electromagnetic $U(1)$ and hypercharge $U(1)$ symmetry breaking, respectively. In Refs.\cite{kaplan2002charged,bedaque2011vortons,buckley2002superconducting}, \cite{bedaque2011vortons}.
+%Even though these condensates due to  are not mentioned, 
+%%%%%%%%%%%%%%% 
+Now that the present-concerned system involves two of condensates ($d$ and $\delta$), 
+%%As long as the $d$- and $\delta$-condensate are assumed to arise from $U(1)_B$ and $U(1)_{C+F}$ breaking respectively, 
+the essential physics behind it should share some analogy with that discussed in the literature.
+%
+
+%%% that the $d$ string is generated while the $\delta$ condensate emerges at the $d$-string centre.
+%%% temporarily 
+Our starting point is that the $d$ vortex is generated from $U(1)$ breaking while the $\delta$ condensate emerges 
+inside the vortex core. At this stage, the former is regarded as a usual, straight string parallel to the
+$z$ direction. Similar to the Eq.~(\ref{eq:bvortex}), it has the form of $d = d(r)e^{i\theta}$.
+%%
+Along the $z$ direction, the $\delta$ condensed field might carry non-vanishing current and charge.
+%% as its emergence is inside the string core. along $z$ axis
+Without losing generality, the form of such a nontrivial $\delta$ vortex solution reads
+\begin{equation}
+  \label{eq:delta}
+  \delta =  e^{i(kz+\omega t)}\delta(r).
+\end{equation}
+In the minimal-wound case the wave number $k$ contributes to the current $J$ via $J =k\int dz \int dS \delta^2$, where $S$ denotes the area being perpendicular to $z$ axis. Similarly, the frequency $\omega$ might contribute to the conserved
+Noether charge $Q$ via $Q = \omega\int dz \int dS \delta^2$.
+%%% \begin{equation}
+%  \label{eq:vortonquantumq}
+%Q = \omega\int dz \int dS \delta^2,
+% \end{equation}.  
+%%%%%%%%%%%%%%%%%
+For the purpose of exploring a possible vorton, we will consider the simplest theory with two order parameters, say
+a $U(1) \times U(1)$ model Lagrangian $\mathcal{L}(d,\delta)= \mathcal{L}_d +
+\mathcal{L}_\delta + \mathcal{L}_{d\delta}$.
+%%%%%%CHANGE%%%%%%%%
+The Lagrangian of $d$ field is easily written in the Mexican-hat form
+\begin{equation}
+  \label{eq:vortonb}
+  \mathcal{L}_d  = (\partial d)^* (\partial d) +\frac{\alpha}{6 v^2}(d^2 - v^2)^2,
+\end{equation}
+where the known vacuum Eq.~(\ref{eq:dvaccum}) has been used to eliminate the coefficient $\beta$.
+For the $\delta$ field its Lagrangian has been given by Eq.~(\ref{eq:vortond}).
+%%%as stressed in Sec.~\ref{sec:2}, it is totally decided by the coefficient
+%$\alpha'$ rather than $\alpha$. The Lagrangian has been given by Eq.~(\ref{eq:deltapotential1}). 
+%%%%%%%%%%%%%
+%, equivalently \begin{equation}   \label{eq:vortond}
+%  \mathcal{L}_\delta = (\partial \delta)^* (\partial \delta) + \frac{\alpha'}{8 v_\delta^2}(\delta^2 - v_\delta^2)^2.
+%\end{equation}
+%%%%%%%%%
+The term with $d$ and $\delta$ mixing, being important for a $U(1) \times U(1)$ model,  may be formally written as
+\begin{equation}
+  \label{eq:vortoninter}
+  \mathcal{L}_{d\delta} = -\lambda d^2 \delta^2,
+\end{equation}
+where $\lambda$ is required positive.
+%%
+Recalling the original GL Lagrangian with the matrix $\Phi$, this term needs to
+%e coefficient $\lambda$ should
+be associated with the contributions from $\alpha$ and $\beta_2$ (exactly, $\alpha'$) at the same time. In order to guarantee
+that the resulting Lagrangian is theoretically controllable and resembles a
+simple $U(1) \times U(1)$ model, we pick upon the relevant terms
+in expansion of Eq.~(\ref{gl}) and define the coefficient as
+\begin{equation}
+  \label{eq:vortoninter1}
+  \lambda = -\frac{1}{3 v^2}(\alpha' +\frac{\alpha}{3}).
+\end{equation}
+
+%%%%necessary and sufficient 
+The first task for us is to investigate the conditions for existence of $\delta$ condensate at the $d$-string centre.
+%%%%%%%
+Apparently, introducing Eq.~(\ref{eq:delta}) leads to the changes in the formalism.
+%% of $\mathcal{L}_\delta$.
+%Different from the case of $\delta$ string discussed in Sec.~\ref{sec:3}A
+For instance, the effective potential for $\delta$ field becomes
+\begin{equation}    \label{eq:vortond1}
+  \mathcal{V}_\delta= -\frac{\alpha'}{8v_\delta^2} [\delta^2 - (v_\delta^2 - \frac{8v_\delta^2}{\alpha'}(\omega^2 -k^2))]^2 \ .\end{equation}
+%%%rather than the formalism Eq.(\ref{eq:deltapotential1}).
+%%%%%%%%
+In the vacuum with $d \neq 0$ and $\delta = 0$, the effective potential provides the additional
+contribution to the Lagrangian $\mathcal{L}_d$. To guarantee the $d$-field symmetry is broken such
+that $d \neq 0$, it is necessary to require that the vacuum contribution is positive.
+By considering the constant terms in Eqs.~(\ref{eq:vortonb}) and (\ref{eq:vortond1}), the condition reads
+\begin{equation}
+\label{eq:vortonb2}
+  \frac{\alpha}{6} v^2 < \frac{\alpha'}{8v_\delta^2}(v_\delta^2  - \frac{8v_\delta^2}{\alpha'}(\omega^2 -k^2))^2.
+\end{equation}
+%%% the Lagrangian of $\delta$ needs to be examined i
+In such a vacuum, also, we requires that the quadratic
+coefficient of $\delta$ is positive to guarantee the
+$\delta$-field symmetry remains unbroken.
+%% such that $\delta = 0$, it is required that . 
+By considering the relevant term in Eq.~(\ref{eq:vortond1}) and taking the mixed
+term into account, we yield the another condition such as
+\begin{equation}
+  \label{eq:vortonb3}
+  \lambda v^2 + \frac{\alpha'}{4}- \omega^2 +k^2 > 0.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%
+On the other hand, the above conditions are not sufficient to yield the vacuum
+with $d = 0$ and $\delta \neq 0$.
+%% which emerges at the centre of $d$ string. Contrary to theEq.~(\ref{eq:vortonb3})
+At classical level the requirement that the $\delta^2$ coefficient is negative results in
+\begin{equation}
+  \label{eq:vortonb4}
+\omega^2 - k^2 -\frac{\alpha'}{4} > 0 \ ,
+\end{equation}
+where the mixed term with $\lambda$ does not take effect. When regarding $\delta$ as 
+the quantum solution and taking its gradient energy cost into account, one requires that the ground state possesses a negative eigenvalue (see, e.g.~\cite{vilenkin2000cosmic,haws1988superconducting} for details).
+Instead of Eq.~(\ref{eq:vortonb4}), a more accurate form
+of the sufficient condition should be given by
+\begin{equation}
+  \label{eq:vortonb5}
+  \omega^2 - k^2 -\frac{\alpha'}{4} > \sqrt{- \frac{2}{3}\alpha \lambda v^2}.
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%
+%%%%%%%%%%%For the ground state of $\delta$ condensate, one may add such a perturbation term as $e^{i\nu t}$ and
+%substitute it into Eq.~(\ref{eq:vortond1}). Note that the mode associated with $\nu$ is actually required
+%to possess a negative eigenvalue~\cite{vilenkin2000cosmic,haws1988superconducting}, 
+Only if the conditions Eqs.~(\ref{eq:vortonb2}), (\ref{eq:vortonb3}) and (\ref{eq:vortonb5}) are
+satisfied at the same time, there exist not merely the $d$ condensate 
+%%in the region with large $r$, 
+but also the $\delta$ condensate.
+% in vicinity of the region with $r \rightarrow 0$.
+
+%With the help of the conditions Eqs.~(\ref{eq:vortonb2}), (\ref{eq:vortonb3}) and (\ref{eq:vortonb5}), t
+Then, we investigate the profile properties with the boundary conditions $\delta(r \rightarrow 0) = v_\delta$ and $\delta(r \rightarrow \infty) = 0$ as well as the usual boundaries for $d$. 
+Based on the Lagrangian $\mathcal{L}(d,\delta)$, it is easy to obtain the profile functions of $d$ and $\delta$ condensates from
+\begin{equation}
+  \label{eq:deuler}
+  d'' +\frac{d'}{r} - \frac{d}{r^2} - (\lambda \delta^2 + \frac{\alpha}{3})d + \frac{\alpha}{3v^2}d^3 = 0,
+\end{equation}
+%%where the mixed term with $\lambda$ has played its role.
+%%For the profile function of , its motion equation may be written as
+and
+\begin{equation}
+  \label{eq:beuler}
+  \delta'' +\frac{\delta'}{r} - \frac{\delta}{r^2} - (k^2 - \omega^2)\delta - (\lambda d^2 + \frac{\alpha'}{4})\delta + \frac{\alpha'}{4v_\delta^2}\delta^3 = 0 \ ,
+\end{equation}
+respectively. In principle, not only the mixed term with $\lambda$ but also the contribution from $k^2-\omega^2$ play their roles as seen in Eq.~(\ref{eq:beuler}). For certainty, we only consider the limit of $k^2=\omega^2$ which corresponds to a
+critical situation for our concerned vortex solution (the so-called ``chiral" case~\cite{lemperiere2003behaviour}).
+In this limit, three of conditions imposed on the magnetic-dependent coefficients $\alpha'$ and $\lambda$ are very stringent. 
+Indeed, we find that the magnetic-field values fulfilling the conditions is actually confined to a
+rather narrow region. 
+%%Comparing with the $\delta$-string case discussed in Sec.~\ref{sec:3}A, it means that 
+It means that there is no need to discuss the magnetic-field dependence of the profile functions in the remainder of the present work. 
+%%when Eqs.~(\ref{eq:vortonb2}), (\ref{eq:vortonb3}) and (\ref{eq:vortonb5}) are satisfied at the same time.
+%%%%%%
+%%%of the severe conditions Eqs.~(\ref{eq:vortonb2}), (\ref{eq:vortonb3}) and (\ref{eq:vortonb5}).
+ %%%%we stress that 
+ %% %%%%%%%%%%%%%%%%%%
+ %both profiles would be affected by an external magnetic field. For the $d$ string, it comesfrom the coefficient $\lambda$. 
+%%narrow enough and it is actually 
+%%
+%%%%%%%%????checK the Bvalue?%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+With help of the parameters
+%values $v$ and $\beta_2$ 
+used in Sec.~\ref{sec:2}, the appropriate field is found to be about $eB \simeq 2 eB_0$ numerically. This is a weak magnetic background at which $v_\delta$ is much smaller than $v$.
+%%%% and the Higgs condensate is allowed as the color-flavor-unlocked fluctuation around the original vacuum of CFL matter. 
+With the boundary conditions two of profile functions are plotted in Fig.\ref{fig:3}.
+%%  of $d$- and $\delta$-fields are plotted. 
+As expected the non-vanishing $\delta$ field exists inside the core region of $d$ string.
+It is observed that the (total) radius $L$ for $d$ string is larger than the radius $L_\delta$ for the $\delta$ vortex solution. 
+%%%From a comparison of the spatial thickness, a
+%%%This result implies that, when the vorton structure is introduced, no complicated curvature effect appears so that the energy of the system can be calculated in a relatively simple manner.
+%%%
+%  
+The similar behavior as Fig.\ref{fig:3} had been obtained in the literature, which opens the possibility of a nontrivial
+vorton structure.
+%%%%%%
+%Once a magnetic field is out of (exactly larger than) it, the vortex solution with Eq.~(\ref{eq:delta})is likely to decay into an usual string discussed above.
+%%(with  $\beta_1=\beta_2=\beta = 1$).
+%%, the region is required to be  approximately.  region
+% at  which satisfies conditions Eqs.(\ref{eq:vortonb2}), (\ref{eq:vortonb3}) and
+%(\ref{eq:vortonb5}), as well as $eB > eB_0$ of course.
+ %%%%%%Also, Fig.~\ref{fig:3} is worthy of discussions by utilizing the language of the total radius $L$.
+%% (rather than the radius $R$ discussed above).
+%From a comparison of the spatial thickness, it is observed that $L$ for $d$ string is far larger than
+%$L_\delta$ for $\delta$ string. This result implies that, when the vorton structure is introduced, no
+%complicated curvature effect appears so that the energy of the system can be calculated in a relativelysimple manner.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\includegraphics[width=4in]{3.eps}
+	\caption{Dimensionless profile functions $f(r)=d(r)/v$ (blue dotted line) and
+     $f(r)=\delta(r)/v_\delta$ (red solid line) in the $\omega^2 = k^2$ limit.
+     }
+	\label{fig:3}
+\end{figure}
+
+Third, it is time to introduce a proper spatial configuration and then
+construct a stable vorton state.
+%%analyze stability of the resulting vorton state from the energy view.
+%%
+To obtain a finite energy for the $d$ vortex, the simple choices are that it exists in a finite
+container or it forms a closed circular loop.
+Our concerned configuration is the latter case. When a straight $d$ string is bent to a
+closed loop (ring), $z$ denotes the direction along a ring and the ring radius becomes $L$.
+Consequently, the phase change of $\delta$ field and thus the charge/current happen in
+the ring direction. 
+%%%
+%This is just the picture of vortons (also known as string loops, vortex rings).
+%In Ref.~\cite{bedaque2011vortons}), a vorton state was illustrated in Fig. 1 for the $K^0$ and $K^+$ fields. In the present situation, the $d$ field changes in the arrow of $K^0$ while the $\delta$ field, like $K^+$, does along the direction of ring.
+%%%%%%%%%%%
+%%.
+Now that the linkage of two vortices has been realized, we focus on energy of the resulting vorton state.
+%and analyze its stability. For the demonstrative purpose, we will
+Let us firstly discuss the contributions from $d$ and
+$\delta$ respectively. For the $d$-string, its length is $2 \pi L$ as a closed loop.
+Suppose its linear tension is $\mathcal{T}_d$, the energy for $d$ vortex is given by
+$\mathcal{E}_d = 2\pi L \mathcal{T}_d$. As seen, this energy is mainly decided by $L$. 
+%%%%%
+%Note that the logarithmic dependence of $\mathcal{T}_d$, c.f. Eq.~(\ref{eq:tension1}, is not too obvious
+%in a large $L$ case). 
+If the system were made up of $d$ singly, it would prefer to shrink
+rather than expand.
+%%%%
+%bviously the state with $L\rightarrow 0$ is not expected one. With increasing $L$, in addition,
+%such kind of system has the infrared divergence which is a generic feature of global vortices.
+%%%%%%%% so that the $\delta$-condensate contribution needs to be taken into account seriously.
+%%%%%
+
+%From the Hamiltonian for $\delta$ field, o
+On the other hand, the $\delta$-vortex energy can be generally expressed as 
+\begin{equation}
+  \label{eq:deltah}
+  \mathcal{E}_\delta = \int dz \int dS  (\nabla_r \delta)^2 + (k^2 + \omega^2)\delta^2 + (\lambda d^2 + \frac{\alpha'}{4})\delta^2 - \frac{\alpha'}{8v_\delta^2}\delta^4.
+\end{equation}
+%%%%%%%%%%%%%%
+By considering the profile equation Eq.(\ref{eq:beuler}), it is reduced to
+\begin{equation}
+  \label{eq:energydelta}
+  \mathcal{E}_{\delta} =  2\pi L\frac{\alpha' \Sigma_4}{8v_\delta^2} + 4 \pi L \omega^2 \Sigma_2,
+\end{equation}
+where $\Sigma_2$ and $\Sigma_4$ are short for
+$\Sigma_2 = \int dS \delta^2$ and $\Sigma_4 = \int dS \delta^4$ respectively.
+In view of the fact that the quantity $Q$ 
+%defined above
+%%by Eq.(\ref{eq:vortonquantumq}) 
+is conserved during variation of $L$, the energy can be further simplified as
+\begin{equation}
+  \label{eq:energydelta1}
+  \mathcal{E}_{\delta} =  2\pi L\frac{\alpha' \Sigma_4}{8v_\delta^2} + \frac{Q^2}{\pi L \Sigma_2}.
+\end{equation}
+Note that the last term in RHS of Eq.(\ref{eq:energydelta1}) has the
+$L^{-1}$ behavior. 
+%%% 
+This implies that the system made up of $\delta$ might prefer expanding of a vorton.
+%
+For our concerned system, it is the competition between two kind of tendencies, shrinking and expanding, to make an energetically-stable vorton state possible. For the total energy $\mathcal{E} = \mathcal{E}_\delta + \mathcal{E}_d$, we minimize it versus $L$ and obtain the stabilized radius from  
+\begin{equation}
+\label{eq:vortonr}
+ L_0^2 = \frac{Q^2}{2\pi^2\Sigma_2(\mathcal{T}_d +
+   \frac{\alpha' \Sigma_4}{8v_\delta^2})}.
+\end{equation}
+At the radius $L_0$, the stable energy for a vorton state behaves as a
+function of $Q$ and $L$, say, $\mathcal{E}_0 = 2 Q^2/(\pi L_0 \Sigma_2)$.
+%%
+The present vorton state is, in a sense, an extension of the straight $\delta$ string discussed in Sec.~\ref{sec:3}A.
+The magnetic field in the former is weak, allowing the charged, color-flavor-unlocked fluctuations to be excited around the CFL vacuum.
+%%magnetic background at which $v_\delta$ is much smaller than $v$.
+%%%% and the Higgs condensate is 
+Moreover, the vorton energy is no longer divergent and the object proposed here might become energetically stable under somewhat astrophysical environment. Therefore, the scenario of vortons is a more plausible realization of Higgs condensate compared with a simple string case.
+%%%%In other words, the infrared divergence of $\mathcal{T}_d$, c.f. Eq.(\ref{eq:tension1}), has been eliminated due to the vorton structure.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%
+\vspace{2.8cm}
+
+%\section{\bf Summary and discussions}
+\section{\bf Outlook}\label{sec:4}
+\vspace{0.2cm}
+
+Having explored the magnetic effect of charged Higgs modes and the possible formation of vortices, we briefly discuss several implications of the results and open questions in future research.
+%consisting of 
+% we investigated effect of a rotated, external magnetic field on
+%color-flavor-locked-type matter, obtained so far
+ 
+
+\emph{1. Magnetic effects in GL and NJL.} 
+%Within the GL framework, 
+The emergence of Higgs condensate is predicted within the GL framework. 
+% the two of basic steps are as follows. 
+Besides the diagonal matrix elements, first of all, we are more concerned the non-diagonal elements in the diquark-condensate order parameter $\Phi$.
+As detailed in Sec.~\ref{sec:2}, these elements make sense via the traceless potential $\mathcal{V}_\zeta$, equivalently the quartic term with $\beta_2$ in the GL Lagrangian.
+%%Higgs condensate originates from the excited non-diagonal  elements of the diquark-condensate matrix $\Phi$.
+%%These elements, , make sense in the traceless part of GL potential $\mathcal{V}_\zeta$, equivalently
+%%the quartic term with $\beta_2$.
+% play the role  Lagrangian, i.e. the $\beta_2$ term and .
+%%% 
+%%Different from the $\alpha$ and $\beta_1$ terms where only $\Phi_L^\dagger\Phi_L$ and $\Phi_R^\dagger\Phi_R$ appear,
+Note that the components like $\Phi_R^\dagger\Phi_L$ and $\Phi_L^\dagger\Phi_R$ generally appear in the $\beta_2$ term whereas
+they do not appear in the $\alpha$ and $\beta_1$ terms.
+%% the traceless term  consists of the components like $\Phi_R^\dagger\Phi_L$ and
+%%$\Phi_L^\dagger\Phi_R$, where $\Phi_L$ and $\Phi_R$ transform under the actions of left- and right-hand
+%%symmetries respectively.
+In the presence of magnetic fields, a relative rotation of the $\Phi_L$ and $\Phi_R$ orientations leads to that $\Phi=\Phi_L=\Phi_R$
+is violated and thus the color-flavor-locked symmetry (exactly, the $SU (3)_{C+L+R}$ symmetry) comes to be perturbed.
+In this sense, Higgs condensate is of the color-flavor unlocked condensate essentially
+and it becomes possible as the charged, non-diagonal matrix elements become excited 
+through the $\beta_2$ term (namely, the traceless potential with Higgs octet mass).
+% . , the   
+%%%%%
+%%As long as these  carry the rotated charges, secondly and perhaps more importantly, they behave as the charged Higgs modes and %respond to the applied field $B$ directly. The resulting Higgs condensate is of color-flavor-unlocked diquark condensates as   and  With help of the magnetic-induced condensate $\delta$, without introducing more details on CFL such like weak-coupling analyses for theCFL gap.%%%%
+%% without losing generality, the diquark-condensate order parameters aredescribed by  In the simplified Lagrangian with $\Phi=\Phi_L=\Phi_R$ , the terms are actually made up of different .For the $\beta_2$ term, not only $\Phi_L^\dagger\Phi_L$ and$\Phi_R^\dagger\Phi_R$ but also $\Phi_R^\dagger\Phi_L$ and$\Phi_L^\dagger\Phi_R$ are taken into account. 
+%Meanwhile, . 
+%%This is why we mainly concern the GL coefficient $m_{\zeta}$ for this term in the present study.
+%In this sense, the present-discussed condensate  in the presence of magnetic fields.
+%%%%%%%%%%%%%%%%%%method%%%%%%%%%%%%
+%% We stress that we d the influence of rotated electromagnetic field to the response of charged Higgs modes.
+%%%%%%%%%%%%%%%%%%
+%%% broken, the $SU (3)_{C+L+R}$ non-invariant term such as Eq.(\ref{eff}) may be yielded formally.
+%%The GL coefficient $m_{\zeta^{c}}$ or Eq.(\ref{eff}) explains why the specific matrix elements of $\Phi$ become coupled with the ${\widetilde{B}}$ field directly. 
+ 
+The physics behind Higgs condensate is totally different from the previous-discussed magnetic effect. In the NJL models, the neutral, color-flavor-locked diquark condensates were concerned. 
+%%by using phenomenological quark models. our  treatment and the usualNJL calculations.
+%Among them the essential one is that no Landau Level for quarks is introduced in the present analysis, 
+Due to the magnetic response of charged quarks, the VEVs of color-flavor-locked condensates need to be differentiated. It leads to the splitting behavior of color superconducting gaps and the less-symmetric MCFL phase. 
+%%%%In fact, the CFL gaps themselves need to be differentiated according to their microscopic content. In view of that the diquark condensate made up of rotated-charge neutral quarks is different from that of opposite-charged quarks, there exist distinctive magnetic responses for two species of condensates. 
+%%%%%%
+From the NJL numerical calculations, the de Haas-van Alphen oscillations of gaps were observed~\cite{ferrer2005magnetic,fukushima2008color} although some recent studies suggest that parts of
+unphysical oscillations may be eliminated by the appropriate regularization scheme ~\cite{allen2015magnetized}.
+Also, it is worthy being noticed that the gap equations can be derived analytically in the limit of strong magnetic field \cite{ferrer2006color,sen2015anisotropic}.
+In phenomenological NJL models, the ``strong field" means that $eB$ has the order of the square of quark chemical potential at which
+only the lowest Landau level of quarks is occupied.
+%%$\mu_q^2$ 
+%%, moreover, the analytical derivation of gap equations is valid for strong  fields, say.
+As the result, it was found that the magnetic fields enhance the specific gap ( i.e. VEV of the condensate made up of opposite-charged quarks ) which might be considered as a generic magnetic catalysis.
+%   %, where 
+%% and thus the  derivation of gap equation is possible).
+%The   Particularly for the  gap,
+%%%%%%%%%
+%%
+%%%ntroduced explicitly since the $U(1)_{\widetilde{Q}}$ symmetry is unbroken. %%%%%
+
+%
+The MCFL phenomena are not studied in the current paper. All through this work, our starting point is the most-symmetric CFL phase with a uniform, flavor-independent gap.
+Since CFL is regarded as the known solution, we have ignored the gap splitting (as well as the possible oscillations) and attributed the magnetic response of charged Higgs modes to the medium dependent GL coefficient.
+%charged matrix elements to a medium dependent Higgs mass. 
+The present model-independent treatment is an effective theory concentrating on corrections to the known CFL results. It only allows for qualitative discussions of changes in Higgs spectrum around the CFL vacuum.
+Once the magnitude of $eB$ is so large that MCFL replaces CFL to be the less-symmetric ground state, also, the symmetry breaking pattern might have been broken explicitly. In this case, the GL formalism based on Eq.(\ref{cfl}) is no longer valid and there are no forces driving Higgs condensate.
+%% the color-flavor-unlocked excitations discussed in Sec.~\ref{sec:2} do not emerge as Higgs condensate.
+% as the  ground state,.
+%%Also, it is no longer valid for strong magnetic field where MCFL has replaced CFL .
+%  %% results, namely, changes in non-Abelian Higgs spectrum
+% and construct a  treatment for Higgs condensate.
+%%The  In future studies,
+%%To handle the detailed magnetic effect, further improvements should concern both the magnetic-induced contribution from charged Higgs modes and the contribution from charged quarks. 
+Because of the absence of quark dof, indeed, the schematic GL approach can not handle the detailed magnetic effect, say the magnetic-induced contribution from charged quarks.
+%based on symmetry consideration purely is difficult to 
+%%%%%%%%%%%%%link!%%%%%%%
+%Within the GL framework, the influences of gap splitting have been reported in our previous work~\cite{zhang2015magnetic}. .  and we focus on the exploration of. It is beyond the scope of paper.
+% 
+So far it is an open question how to understand the microscopic implication of Higgs condensate from the viewpoint of 
+quark-photon interactions and to bridge ``gaps" between the two kinds of magnetic effects in a more consistent manner.
+% in the scope of dense quark matter. in particular %Towards this goal, we need to incorporate
+%quark/gluon interactions with rotated photons . Also, the non-perturbative method rooted
+%in full QCD might be necessary. Possible improvements in theoretical methods will be explored .%In addition, the magnetic dependence of $\alpha'$ is given at the leading order of $eB$, as shown in Eq.(\ref{eq:magneticmass}). 
+%%%%%%%%%%%%%%%%
+%It should be no longer valid  enough, say,  with order of $\mu_q^2$.
+%Superficially one might overcome this shortcoming by extending Eq.(\ref{eq:magneticmass}) to a more general expansion such as $\alpha'=(m_\zeta^{eff})^2 = m_\zeta^2 - v_\perp^2eB + C_2 (eB)^2 + \cdots$. Nevertheless, it is nontrivial to handle the expansion for the strong fields.  
+%%%%Within the GL framework, not only the coefficients like $C_2$ but also the transverse velocity $v_\perp$ are still missing in the strong-field limit. The NJL result for $v_\perp$ in this limit is clearly deviated from $1/\sqrt{3}$~\cite{sen2015anisotropic}.
+%Therefore, we are not able to describe detailed properties of the homogenous MCFL phase quantitatively.
+%%%%%%%%%%%%originates from quark-photon interactions
+%%%%%%%%%%%%%%%%
+%
+
+\emph{2. Vortices in color superconducting quark matter.} Assuming that Higgs condensate exists inside the core region of the CFL vortices, we simplify the relevant symmetry breaking as a $U(1)$ breaking. Based on the symmetry consideration, a superfluid-like
+vortex string made up of $\delta$ can be constructed and then the discussion is extended to the situation where not merely $\delta$ but also $d$ are incorporated. 
+%For the first time, a novel scenario for vorton formation was suggested in the scope of magnetic color-flavor-locked matter of dense QCD.
+%% %%%%%%%%%%%%
+%%  First of all, it is important to further examine the scenario of stable vortons 
+There still exist some of aspects which are not dealt with in the present study of stable vortons. 
+%In order to simplify the 
+For instance, the profile behaviors have been obtained from the critical situation $\omega^2 = k^2$.
+%% (but the discussion of vorton energy does not depend on this limit). 
+Once the effects of $\omega^2 \neq k^2$ is introduced, nevertheless, existences of $Q$ and $J$ and detailed electromagnetic properties for vortons need to be examined. 
+%%It is still an open question how a vorton state decay into the usual strings with varying magnetic fields.
+%%In the limit of $\omega^2 = k^2$, also, the spatial thickness for $d$ string has been observed to be far larger than that for $\delta$.
+%In this sense, no complicated curvature effect appears and energy of the system is calculated in a relatively simple manner.
+At the same time complicated curvature effect might appear, if the spatial thickness for $d$ string is not very large with respective to that for $\delta$. In this case, it is necessary to build more realistic models for the geometry of vorton structure. 
+%%For instance, a vorton state might be destroyed by a large current $J$ in the context of cosmic string \cite{vilenkin2000cosmic}.
+%%%%%%%%%%%%
+%Secondly, it is assumed in this section that the $\delta$ field stems out of $U(1)_{C+F}$ breaking.
+%If the rotated electromagnetic mechanism remains valid, nevertheless, the $\delta$ condensate itself could be classified into two species, say, these from $\zeta^+$ and $\zeta^-$excitations, in the sense of $U(1)_{\widetilde{Q}}$. 
+%Naively, two kinds of fields should have the opposite orbiting directions in the presence of magnetic fields.
+%In this case, it is necessary to build more realistic models and study the . 
+Also, more complexities come from the realistic situations. When a large strange-flavor mass is considered, for instance, the color-flavor-locked matter with $K$ condensates and the
+resulting vortex solutions need to be included as well~\cite{kaplan2002charged,buckley2002superconducting}.%%
+%%%%%%%%%%%%%%%%%
+
+On the other hand, the rich physics lies in the interplay of rotated gluons, which originated from the rotated electromagnetic mechanism, with the applied field $B$.
+By considering magnetic responses of gluons (through their rotated charges), this issue was studied within gluon mean-field theory at high densities~\cite{ferrer2006magnetic}. 
+There, the vortices with gluon condensate were suggested for very strong (external) magnetic fields.
+In the present paper we ignore the rotated gluons with heavy Meissner mass within the GL framework.
+Once the gluon dof is taken into account, nevertheless, the anti-screening effect predicted in Ref.~\cite{ferrer2006magnetic} might lead to that the current vortices with Higgs condensate is difficult to be generated.
+%%%differs the external magnetic field from the internal magnetic field. 
+Also, the gluon interactions and the gluon-photon mixing were found to be important for the stability and electromagnetic properties of vortices with color-flavor-locked diquark condensate~\cite{vinci2012spontaneous,eto2010instabilities,iida2005magnetic}.
+%%which are totally different from our concerned vortices with diquark condensates. Also, it was pointed out that   
+%%Another element missing in this work is  . Within the present  the gluon dof with non-vanishing  have been ignored for simplicity. 
+%In the situation of strong gauge coupling, it is reasonable to assume that the gluon fields by themselves did not affect the symmetry breaking induced by an external background field $B$.  the corresponding color magnetic field could play the role on formation of non-Abelian CFL vortices. When the topological object consisting of CFL are regarded as color magnetic fluxes, for instance, the gluon interactions as well as the gluon-photon mixing had been found relevant for the stability and electromagnetic properties \cite{vinci2012spontaneous,eto2010instabilities,iida2005magnetic}.
+%%In this case, the current schemes of vortices with diquark condensates need to be further reexamined.
+%%%%%%On the other hand, a 
+%%%%%%
+So far it remains unclear whether or not there exist the internal links among the gluon-condensate vortices, the CFL vortices as well as the Higgs-condensate vortices. Together with the above-mentioned topics, further studies in the astrophysical ``Laboratories" such like the interior of compact stars are interesting undoubtedly. 
+%These details will leave for future studies. We hope that the basic forming mechanism presented here may survive various corrections.
+%Towards this goal, it is an important task to deeply understand the implications of $\delta$ from microscopic viewpoint and bridge ``gaps" between the model-independent approach and the phenomenological quark/gluon model. We need to incorporate quark/gluon interactions with rotated photons in a more consistent manner. Also, the non-perturbative method rooted in full QCD might be necessary. Possible improvements in theoretical methods will be explored in future studies.
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%On the other hand, the GL approach is a prior analysis purely based on symmetry consideration. It only
+%allows for qualitative discussions since the quark dof are not incorporated explicitly.
+%To some extent, it is supposed that the quadratic-order term of $\Phi$ (the GL term with $\alpha$) accounts
+%for the contributions from four-quark interactions. In view of the fact that $\alpha$ determines the existence
+%of color-flavor-locked condensate $d$ mainly, the CFL Lagrangian with $\Phi = \texttt{diag}(d,d,d)$ ought to
+%be consistent with a phenomenological NJL model with four-quark interactions.
+%For the $\delta$ condensate, however, its existence is mainly determined by $\alpha'$ in the quartic-order term
+%of $\Phi$. Note that such kind of $\Phi^4$ terms actually reflect the contributions from eight-quark interactions.
+%In this sense, the MCFL Lagrangian including $\delta$ is likely to have been beyond the usual mean-field treatment
+%of NJL model, which explains why the present MCFL is not strictly that obtained from NJL model also.
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+%Perhaps more importantly, our employed scheme of magnetic effect is very different from the NJL-model scheme.
+%We were concerned the magnetic response of charged Higgs modes while the response of charged quarks was considered
+%on the NJL side. The former originates from magnetic effect for bosons essentially and no Landau Level of fermions
+%is introduced. In particular, the magnetic dependence of $\alpha'$ (i.e. Eq.~(\ref{eq:magneticmass})) was obtained at the leading
+%order of $eB$. It should be no longer valid when the magnitude of $eB$ is large enough.
+%%% (say, $eB$ has the order of square of quark chemical potential).
+%Superficially one might overcome this shortcoming by replacing Eq.~(\ref{eq:magneticmass}) by
+%$\alpha'=(m_\zeta^{eff})^2 = m_\zeta^2 - v_\perp^2 eB + c_2 (eB)^2 + \cdots$.
+%Nevertheless, it is nontrivial to handle such an expansion for strong fields $eB \sim \mu_q^2$.
+%Within the GL framework, in fact, not only the coefficients like $c_2$, but also the transverse
+%velocity $v_\perp$ in the strong-field limit is still missing. The NJL result for $v_\perp$ is
+%clearly deviated from $1/\sqrt{3}$~\cite{sen2015anisotropic}.
+%%%%%%%%%%%%%%%%
+%%%Even though vortices and vortons are predicted for magnetic color-flavor-locked matter of dense QCD, we are not
+%able to describe their detailed properties of the homogenous phase quantitatively, due to the lack of microscopic
+%quark/gluon(s) dof.
+%It is an important task to bridge ``gaps" between the GL approach and the NJL effective model, and understand the
+%microscopic implications of $\delta$ in the scope of dense quark matter. Towards this goal, we need to incorporate
+%quark/gluon interactions with rotated photons in a more consistent manner. Also, the non-perturbative method rooted
+%in full QCD might be necessary. Possible improvements in theoretical methods will be explored in future studies.
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.5cm} \noindent {\bf Acknowledgements} \vspace{0.5cm}
+
+This work was supported by National Natural Science Foundation of
+China ( NSFC ) under Contract No. 10875058.
+
+\vspace{0.7cm}
+
+\bibliography{mybibtex.bib}
+\bibliographystyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{thebibliography}{99}
+
+% \bibitem{andersen2016phase}
+% Jens~O Andersen, William~R Naylor, and Anders Tranberg.
+% \newblock Phase diagram of QCD in a magnetic field.
+% \newblock {\em Reviews of Modern Physics}, 88(2):025001, 2016.
+
+% \bibitem{kharzeev2013strongly}
+% Dmitri~E Kharzeev, Karl Landsteiner, Andreas Schmitt, and Ho-Ung Yee.
+% \newblock Strongly interacting matter in magnetic fields: a guide to this
+%   volume.
+% \newblock In {\em Strongly Interacting Matter in Magnetic Fields}, pages 1--11.
+%   Springer, 2013.
+
+% \bibitem{miransky2015quantum}Vladimir~A Miransky and Igor~A Shovkovy.
+% \newblock Quantum field theory in a magnetic field: From quantum chromodynamics  to graphene and dirac semimetals.
+% \newblock {\em Physics Reports}, 576:1--209, 2015.
+
+% \bibitem{kharzeev2008}
+% D. E. Kharzeev, L. D. McLerran and H. J. Warringa. 
+% \newblock The effects of topological charge change in heavy ion collisions: event by event P and CP-violation. 
+% \newblock {\em Nuclear Physics A}, 803:227-253, 2008.
+% %Nucl. Phys. {\bf A 803}, 2008 227-253.
+% % [arXiv:0711.0950].
+
+% \bibitem{skokov2009}
+% V. Skokov, A. Y. Illarionov, V. Toneev. 
+% \newblock Estimate of the magnetic field strength in heavy-ion collisions. 
+% \newblock {\em Int. J. Mod. Phys. A}, 24: 5925-5932,2009.
+% % [arXiv:0907.1396].
+
+% \bibitem{dong2001}
+% D. Lai. 
+% \newblock Matter in strong magnetic fields.
+% %\href{http://dx.doi.org/10.1103/RevModPhys.73.629}
+% \newblock {\em Reviews of Modern Physics},73(3): 629-661,2001.
+
+
+% \bibitem{lai1991cold}
+% Dong Lai and Stuart~L Shapiro.
+% \newblock Cold equation of state in a strong magnetic field-effects of inverse
+%   beta-decay.
+% \newblock {\em The Astrophysical Journal}, 383:745--751, 1991.
+
+% %\bibitem{bali2012}G. Bali, et al. \newblock The QCD phase diagram for external magnetic fields. 
+% %\newblock{\em Journal of High Energy Physics}, 1202:044-048,2012.
+% %\newblock QCD quark condensate in external magnetic fields.
+% %\newblock{\em Physical Review D}, 86:071502(R), 2012.
+% %G. Bali, F. Bruckmann, G. Endrodi, F. Gruber, A. Sch\"{a}fer. \newblock Magnetic field-induced gluonic (inverse) catalysis and pressure (an)isotropy in QCD. \newblock {\em Journal of High Energy Physics}, 1304:130-135, 2013.
+% %%
+
+% %%%\bibitem{miransky2002} V. A. Miransky, I. A. Shovkovy. \newblock Magnetic catalysis and anisotropic confinement in QCD.
+% %\newblock {\em Physical Review D}, 66:045006, 2002.
+% %%
+
+% %\bibitem{fukushima2012}K. Fukushima, Y. Hidaka. \newblock Magnetic catalysis versus magnetic inhibition.
+% %%%\newblock {\em Physical review letters}, 110:031601, 2013.
+% %
+
+% \bibitem{alford2004dense}
+% Mark Alford.
+% \newblock Dense quark matter in nature.
+% \newblock {\em Progress of Theoretical Physics Supplement}, 153:1--14, 2004.
+
+% \bibitem{buballa2005njl}
+% Michael Buballa.
+% \newblock Njl-model analysis of dense quark matter.
+% \newblock {\em Physics Reports}, 407(4):205--376, 2005.
+
+% \bibitem{alford1998qcd}
+% Mark Alford, Krishna Rajagopal, and Frank Wilczek.
+% \newblock Qcd at finite baryon density: Nucleon droplets and color
+%   superconductivity.
+% \newblock {\em Physics Letters B}, 422(1):247--256, 1998.
+
+% \bibitem{alford2000magnetic}
+% Mark Alford, J{\"u}rgen Berges, and Krishna Rajagopal.
+% \newblock Magnetic fields within color superconducting neutron star cores.
+% \newblock {\em Nuclear Physics B}, 571(1):269--284, 2000.
+
+% \bibitem{ferrer2005magnetic}
+% Efrain~J Ferrer, Vivian de~La~Incera, and Cristina Manuel.
+% \newblock Magnetic color-flavor locking phase in high-density qcd.
+% \newblock {\em Physical review letters}, 95(15):152002, 2005.
+
+% \bibitem{fukushima2008color}
+% Kenji Fukushima and Harmen~J Warringa.
+% \newblock Color superconducting matter in a magnetic field.
+% \newblock {\em Physical review letters}, 100(3):032007, 2008.
+
+% \bibitem{ferrer2006color}
+% Efrain~J Ferrer, Vivian de~la Incera, and Cristina Manuel.
+% \newblock Color-superconducting gap in the presence of a magnetic field.
+% \newblock {\em Nuclear Physics B}, 747(1):88--112, 2006.
+
+% \bibitem{ferrer2007magnetic}
+% Efrain~J Ferrer and Vivian de~La~Incera.
+% \newblock Magnetic phases in three-flavor color superconductivity.
+% \newblock {\em Physical Review D}, 76(4):045011, 2007.
+
+% \bibitem{allen2015magnetized}
+% P~Allen, Ana~G Grunfeld, and Norberto~N Scoccola.
+% \newblock Magnetized color superconducting cold quark matter within the su (2)
+%   f njl model: A novel regularization scheme.
+% \newblock {\em Physical Review D}, 92(7):074041, 2015.
+
+% \bibitem{sen2015anisotropic}
+% Srimoyee Sen.
+% \newblock Anisotropic propagator for the goldstone modes in color-flavor locked
+%   phase in the presence of a magnetic field.
+% \newblock {\em Physical Review D}, 92(2):025004, 2015.
+
+% \bibitem{zhang2015magnetic}
+% Xiao-Bing Zhang, Zhi-Cheng Bu, Fu-Ping Peng, and Yi~Zhang.
+% \newblock Magnetic effects on color--flavor-locked quark matter and non-abelian
+%   vortices via ginzburg--landau approach.
+% \newblock {\em Nuclear Physics A}, 938:1--13, 2015.
+
+% \bibitem{balachandran2006semisuperfluid}
+% AP~Balachandran, S~Digal, and T~Matsuura.
+% \newblock Semisuperfluid strings in high density qcd.
+% \newblock {\em Physical Review D}, 73(7):074009, 2006.
+
+% \bibitem{giannakis2002ginzburg}
+% Ioannis Giannakis and Hai-cang Ren.
+% \newblock Ginzburg-landau free energy functional of color superconductivity at
+%   weak coupling.
+% \newblock {\em Physical Review D}, 65(5):054017, 2002.
+
+% \bibitem{nakano2008non}
+% Eiji Nakano, Muneto Nitta, and Taeko Matsuura.
+% \newblock Non-abelian strings in high-density qcd: Zero modes and interactions.
+% \newblock {\em Physical Review D}, 78(4):045002, 2008.
+
+% \bibitem{vinci2012spontaneous}
+% Walter Vinci, Mattia Cipriani, and Muneto Nitta.
+% \newblock Spontaneous magnetization through non-abelian vortex formation in
+%   rotating dense quark matter.
+% \newblock {\em Physical Review D}, 86(8):085018, 2012.
+
+% \bibitem{eto2014vortices}
+% Minoru Eto, Yuji Hirono, Muneto Nitta, and Shigehiro Yasui.
+% \newblock Vortices and other topological solitons in dense quark matter.
+% \newblock {\em Progress of Theoretical and Experimental Physics},
+%   2014(1):012D01, 2014.
+
+% \bibitem{eto2010instabilities}
+% Minoru Eto, Muneto Nitta, and Naoki Yamamoto.
+% \newblock Instabilities of non-abelian vortices in dense qcd.
+% \newblock {\em Physical review letters}, 104(16):161601, 2010.
+
+% \bibitem{iida2002superfluid}
+% Kei Iida and Gordon Baym.
+% \newblock Superfluid phases of quark matter. iii. supercurrents and vortices.
+% \newblock {\em Physical Review D}, 66(1):014015, 2002.
+
+
+
+% \bibitem{eto2009color}
+% Minoru Eto and Muneto Nitta.
+% \newblock Color magnetic flux tubes in dense qcd.
+% \newblock {\em Physical Review D}, 80(12):125007, 2009.
+
+% \bibitem{vilenkin2000cosmic}
+% Alexander Vilenkin and E~Paul~S Shellard.
+% \newblock {\em Cosmic strings and other topological defects}.
+% \newblock Cambridge University Press, 2000.
+
+% \bibitem{witten1985superconducting}
+% Edward Witten.
+% \newblock Superconducting strings.
+% \newblock {\em Nuclear Physics B}, 249(4):557--592, 1985.
+
+% \bibitem{davis1988physics1}
+% RL~Davis and EPS Shellard.
+% \newblock The physics of vortex superconductivity.
+% \newblock {\em Physics Letters B}, 207(4):404--410, 1988.
+
+% \bibitem{davis1988physics2}
+% RL~Davis and E~Paul~S Shellard.
+% \newblock The physics of vortex superconductivity. ii.
+% \newblock {\em Physics Letters B}, 209(4):485--490, 1988.
+
+% \bibitem{haws1988superconducting}
+% David Haws, Mark Hindmarsh, and Neil Turok.
+% \newblock Superconducting strings or springs?
+% \newblock {\em Physics Letters B}, 209(2-3):255--261, 1988.
+
+% \bibitem{kaplan2002charged}
+% David~B Kaplan and Sanjay Reddy.
+% \newblock Charged and superconducting vortices in dense quark matter.
+% \newblock {\em Physical review letters}, 88(13):132302, 2002.
+
+% \bibitem{buckley2002superconducting}
+% Kirk~BW Buckley and Ariel~R Zhitnitsky.
+% \newblock Superconducting k strings in high density qcd.
+% \newblock {\em Journal of High Energy Physics}, 2002(08):013, 2002.
+
+% \bibitem{lemperiere2003behaviour}
+% Y~Lemperiere and EPS Shellard.
+% \newblock On the behaviour and stability of superconducting currents.
+% \newblock {\em Nuclear Physics B}, 649(3):511--525, 2003.
+
+% \bibitem{bedaque2011vortons}
+% Paulo~F Bedaque, Evan Berkowitz, and Aleksey Cherman.
+% \newblock Vortons in dense quark matter.
+% \newblock {\em Physical Review D}, 84(2):023006, 2011.
+
+% \bibitem{iida2005magnetic}
+% Kei Iida.
+% \newblock Magnetic vortex in color-flavor locked quark matter.
+% \newblock {\em Physical Review D}, 71(5):054011, 2005.
+
+% \bibitem{ferrer2006magnetic}
+% Efrain~J Ferrer and Vivian de~La~Incera.
+% \newblock Magnetic fields boosted by gluon vortices in color superconductivity.
+% \newblock {\em Physical review letters}, 97(12):122301, 2006.
+% \bibitem{Elizalde2004Neutrino}
+% Elizalde, E. and Ferrer, E. J. and Incera, V. De La
+% \newblock Neutrino Propagation in a Strongly Magnetized Medium
+% \newblock {\em Physical Review D}, 70(4):636-640, 2004.
+
+
+
+
+% \end{thebibliography}
+
+
+\end{document}
